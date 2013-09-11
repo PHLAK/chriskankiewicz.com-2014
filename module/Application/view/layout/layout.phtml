@@ -38,13 +38,22 @@
                     <div class="col-md-12">
 
                         <a href="/" id="site-title" class="clearfix">
-                            <?php echo $this->gravatar('Chris@ChrisKankiewicz.com')->setImgSize(120)->setAttribs(array('class' => 'img-rounded')); ?>
-                            <span class="title-text">
-                                <h1>Chris Kankiewicz</h1>
-                                <small>
-                                    Web Application Developer &bull; Phoenix, Arizona
-                                </small>
-                            </span>
+
+                            <div class="row">
+                                <div class="col-sm-2 text-center">
+                                    <?php echo $this->gravatar('Chris@ChrisKankiewicz.com')->setImgSize(300)->setAttribs(array('class' => 'img-rounded img-responsive')); ?>
+                                </div>
+
+                                <div class="col-sm-10">
+                                    <span class="title-text">
+                                        <h1>Chris Kankiewicz</h1>
+                                        <small>
+                                            Web Application Developer &bull; Phoenix, Arizona
+                                        </small>
+                                    </span>
+                                </div>
+                            </div>
+
                         </a>
 
                     </div>
