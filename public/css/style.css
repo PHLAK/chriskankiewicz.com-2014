@@ -1,0 +1,163 @@
+/* -------------------------------------------------------------------------- */
+/* -----| GENERAL |---------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+
+body {
+    font-family: 'Oxygen', sans-serif;
+    font-weight: 300;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/* -----| HEADER |----------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+
+#site-header {
+    background-image: url('/img/header_bg.jpg');
+    background-position: center;
+    background-size: cover;
+    padding: 50px 0;4
+}
+
+#site-title {
+    display: block;
+    line-height: 3rem;
+    margin: 0;
+}
+
+#site-title img {
+    float: left;
+    box-shadow: 0 1px 3px #666;
+}
+
+#site-title .title-text {
+    float: left;
+    margin: 14px 0 0 20px;
+}
+
+#site-title h1 {
+    color: #FFF;
+    opacity: .75;
+    font-size: 6rem;
+    font-weight: 800;
+    margin: 0;
+    opacity: 0.85;
+    text-shadow: 0 1px 3px #666;
+}
+
+#site-title small {
+    color: #FFF;
+    display: block;
+    font-size: 2.2rem;
+    line-height: 2.5rem;
+    opacity: 0.85;
+    text-align: center;
+    text-shadow: 0 1px 3px #666;
+}
+
+.contact-info {
+    padding: 20px 0;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/* -----| SOCIAL ICONS |----------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+
+#social-icons {
+    display: inline-block;
+    margin: 12px 0;
+}
+
+#social-icons a {
+    background-color: #ACACAC;
+    border-radius: 3px;
+    color: #FFF;
+    display: inline-block;
+    margin: 0 0 0 5px;
+    padding: 4px;
+    text-align: center;
+}
+
+#social-icons a:hover,
+#social-icons a:active {
+    background-color: #333;
+    text-decoration: none;
+}
+
+#social-icons i {
+    display: block;
+    font-size: 14px;
+    height: 18px;
+    line-height: 18px;
+    vertical-align: middle;
+    width: 18px;
+}
+
+#social-icons .google-plus:hover,
+#social-icons .google-plus:active {
+    background-color: #DD4B39;
+}
+
+#social-icons .twitter:hover,
+#social-icons .twitter:active {
+    background-color: #00ACEE;
+}
+
+#social-icons .github:hover,
+#social-icons .github:active {
+    background-color: #333;
+}
+
+#social-icons .rss:hover,
+#social-icons .rss:active {
+    background-color: #F90;
+}
+
+#social-icons .email:hover,
+#social-icons .email:active {
+    background-color: #333;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/* -----| CONTENT AREA |----------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+
+.jumbotron {
+    margin: 20px 0 0;
+}
+
+.jumbotron p {
+    margin: 0;
+    text-align: justify;
+}
+
+#content-area h2 {
+    border-bottom: 4px double #DEDEDE;
+    font-family: Arvo, serif;
+    font-weight: normal;
+    margin-top: 50px;
+    padding: 0 0 5px;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/* -----| FOOTER |----------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+
+#site-footer {
+    background-color: #222;
+    color: #FFF;
+    margin: 50px 0 0;
+    padding: 50px;
+    text-align: center;
+}
+
+#site-footer a {
+    color: #FFF;
+}
+
+#site-footer a:hover {
+    text-decoration: underline;
+}

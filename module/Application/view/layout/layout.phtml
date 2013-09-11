@@ -1,0 +1,109 @@
+<?php echo $this->doctype(); ?>
+
+<html lang="en">
+
+    <head>
+        <?php echo $this->headTitle('Chris Kankiewicz &bull; Web Application Developer'); ?>
+
+        <?php echo $this->headLink(array('rel' => 'shortcut icon', 'type' => 'image/vnd.microsoft.icon', 'href' => $this->basePath() . '/img/favicon.ico')); ?>
+
+        <!-- STYLES / FONTS -->
+        <?php $this->headLink()->appendStylesheet($this->basePath() . '/css/bootstrap.min.css'); ?>
+        <?php $this->headLink()->appendStylesheet($this->basePath() . '/css/font-awesome.min.css'); ?>
+        <?php $this->headLink()->appendStylesheet($this->basePath() . '/css/style.css'); ?>
+
+        <?php $this->headLink()->appendStylesheet('//fonts.googleapis.com/css?family=Arvo|Oxygen:300,400,700'); ?>
+
+        <?php echo $this->headLink(); ?>
+
+        <!-- SCRIPTS -->
+        <?php $this->headScript()->appendFile('//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js'); ?>
+        <?php $this->headScript()->appendFile($this->basePath() . '/js/bootstrap.min.js'); ?>
+        <?php $this->headScript()->appendFile($this->basePath() . '/js/chriskankiewicz.js'); ?>
+        <?php echo $this->headScript(); ?>
+
+        <!-- META -->
+        <meta charset="utf-8">
+        <?php echo $this->headMeta()->appendName('viewport', 'width=device-width, initial-scale=1.0'); ?>
+
+    </head>
+
+    <body>
+
+        <div id="site-header">
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="col-md-12">
+
+                        <a href="/" id="site-title" class="clearfix">
+                            <?php echo $this->gravatar('Chris@ChrisKankiewicz.com')->setImgSize(120)->setAttribs(array('class' => 'img-rounded')); ?>
+                            <span class="title-text">
+                                <h1>Chris Kankiewicz</h1>
+                                <small>
+                                    Web Application Developer &bull; Phoenix, Arizona
+                                </small>
+                            </span>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <nav id="site-nav" class="navbar navbar-default navbar-static-top">
+            <div class="container">
+                <div class="collapse navbar-collapse navbar-ex1-collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="/" title="Home"><i class="icon-home"></i></a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+
+                    <div id="social-icons" class="navbar-right">
+
+                        Follow:
+
+                        <a href="http://goo.gl/KTHmpb" class="google-plus" title="Google+" rel="tooltip" data-placement="bottom">
+                            <i class="icon-google-plus"></i>
+                        </a>
+
+                        <a href="http://goo.gl/xpVJzg" class="twitter" title="Twitter" rel="tooltip" data-placement="bottom">
+                            <i class="icon-twitter"></i>
+                        </a>
+
+                        <a href="http://goo.gl/3Wur6L" class="github" title="GitHub" rel="tooltip" data-placement="bottom">
+                            <i class="icon-github"></i>
+                        </a>
+
+                        <?php /*
+                        <a href="http://goo.gl/lDpwxg" class="rss" title="Blog" rel="tooltip" data-placement="bottom">
+                            <i class="icon-rss"></i>
+                        </a>
+                        */ ?>
+
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+
+        <div id="content-area">
+
+            <?php echo $this->content; ?>
+
+        </div>
+
+        <div id="site-footer">
+            &copy; <?php echo date('Y'); ?> <a href="/">Chris Kankiewicz</a>
+        </div>
+
+        <?php echo $this->inlineScript(); ?>
+
+    </body>
+
+</html>
