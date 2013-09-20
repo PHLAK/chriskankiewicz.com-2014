@@ -3,6 +3,7 @@
 /* -------------------------------------------------------------------------- */
 
 body {
+    background-color: #E5E5E5;
     font-family: 'Oxygen', sans-serif;
     font-weight: 300;
 }
@@ -16,7 +17,7 @@ body {
     background-image: url('/img/header_bg.jpg');
     background-position: center;
     background-size: cover;
-    padding: 50px 0;4
+    padding: 30px 0;
 }
 
 #site-title {
@@ -29,31 +30,36 @@ body {
     text-decoration: none;
 }
 
-#site-title img {
-    box-shadow: 0 1px 3px #666;
+#site-title .title-img {
+    display: inline-block;
+    float: left;
+    margin-right: -100%;
+    width: 120px;
 }
 
 #site-title .title-text {
     display: inline-block;
+    float: left;
+    margin: 17px 0;
+    margin-left: 150px;
     text-align: center;
 }
 
-#site-title h1 {
+.title-text h1 {
     color: #FFF;
-    opacity: .75;
-    font-size: 7rem;
-    font-weight: 800;
+    font-size: 6rem;
+    font-weight: 700;
     margin: 0;
-    opacity: 0.85;
+    opacity: 0.9;
     text-shadow: 0 1px 3px #666;
 }
 
-#site-title small {
+.title-text small {
     color: #FFF;
     display: block;
-    font-size: 2.5rem;
-    line-height: 2.75rem;
-    opacity: 0.85;
+    font-size: 2rem;
+    line-height: 2rem;
+    opacity: 0.9;
     text-shadow: 0 1px 3px #666;
 }
 
@@ -72,9 +78,9 @@ body {
 }
 
 #social-icons a {
-    background-color: #ACACAC;
+    background-color: #FFF;
     border-radius: 3px;
-    color: #FFF;
+    color: #999;
     display: inline-block;
     margin: 0 0 0 5px;
     padding: 4px;
@@ -84,6 +90,7 @@ body {
 #social-icons a:hover,
 #social-icons a:active {
     background-color: #333;
+    color: #FFF;
     text-decoration: none;
 }
 
@@ -108,7 +115,7 @@ body {
 
 #social-icons .github:hover,
 #social-icons .github:active {
-    background-color: #333;
+    background-color: #CCC;
 }
 
 #social-icons .rss:hover,
@@ -126,6 +133,36 @@ body {
 /* -----| CONTENT AREA |----------------------------------------------------- */
 /* -------------------------------------------------------------------------- */
 
+#content-area {
+    padding: 0 20px;
+}
+
+.card {
+    border-radius: 2px;
+    background-color: #FFF;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    margin: 40px 0;
+    position: relative;
+}
+
+.card-title {
+    background-color: #8CC152;
+    border-radius: 2px;
+    color: #FFF;
+    display: inline-block;
+    font-family: Arvo, serif;
+    font-weight: normal;
+    margin: 0;
+    padding: 10px;
+    position: absolute;
+    top: -10px;
+    left: -10px;
+}
+
+.card-body {
+    padding: 50px;
+}
+
 .jumbotron {
     margin: 20px 0 0;
 }
@@ -135,12 +172,19 @@ body {
     text-align: justify;
 }
 
-#content-area h2 {
-    border-bottom: 4px double #DEDEDE;
-    font-family: Arvo, serif;
-    font-weight: normal;
-    margin-top: 50px;
-    padding: 0 0 5px;
+.card-body > *:first-child {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.card-body > *:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+#content-area .container > *:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
 
 
