@@ -11,11 +11,36 @@ namespace Application\Controller;
 
 use Zend\Mvc\Controller\AbstractActionController;
 use Zend\View\Model\ViewModel;
+use DirectoryIterator;
 
 class IndexController extends AbstractActionController
 {
     public function indexAction()
     {
-        return new ViewModel();
+
+        // Initialize view model
+        $view = new ViewModel();
+
+        // Get array of images
+        $iterator = new DirectoryIterator('public/img/header_images');
+
+        // print_r($images); die(); // Debugging
+
+        // Build array of file names
+        foreach ($iterator as $file) {
+            if (!$file->isDot()) {
+                $headerImages[] = $file->getFilename();
+            }
+        }
+
+        // print_r($headerImages); die(); // Debugging
+
+        // Shuffle the array
+        shuffle($headerImages);
+
+        // Pass header image to the view
+        $view->setVariable('headerImage', $headerImages[0]);
+
+        return $view;
     }
 }

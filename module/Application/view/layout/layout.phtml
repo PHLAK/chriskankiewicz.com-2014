@@ -2,6 +2,8 @@
 
 <html lang="en">
 
+<?php $children = $this->viewModel()->getCurrent()->getChildren(); $child = $children[0]; ?>
+
     <head>
         <?php echo $this->headTitle('Chris Kankiewicz &bull; Web Application Developer'); ?>
 
@@ -15,6 +17,10 @@
         <?php $this->headLink()->appendStylesheet('//fonts.googleapis.com/css?family=Arvo|Oxygen:300,400,700'); ?>
 
         <?php echo $this->headLink(); ?>
+
+        <style type="text/css">
+            #site-header { background-image: url(/img/header_images/<?php echo $child->headerImage; ?>) !important; }
+        </style>
 
         <!-- SCRIPTS -->
         <?php $this->headScript()->appendFile('//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js'); ?>
