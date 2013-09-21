@@ -5,7 +5,7 @@
 <?php $children = $this->viewModel()->getCurrent()->getChildren(); $child = $children[0]; ?>
 
     <head>
-        <?php echo $this->headTitle('Chris Kankiewicz &bull; Web Application Developer'); ?>
+        <?php echo $this->headTitle('Chris Kankiewicz • Web Application Developer'); ?>
 
         <?php echo $this->headLink(array('rel' => 'shortcut icon', 'type' => 'image/vnd.microsoft.icon', 'href' => $this->basePath() . '/img/favicon.ico')); ?>
 
@@ -18,9 +18,11 @@
 
         <?php echo $this->headLink(); ?>
 
+        <?php /*
         <style type="text/css">
             #site-header { background-image: url(/img/header_images/<?php echo $child->headerImage; ?>) !important; }
         </style>
+        */ ?>
 
         <!-- SCRIPTS -->
         <?php $this->headScript()->appendFile('//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js'); ?>

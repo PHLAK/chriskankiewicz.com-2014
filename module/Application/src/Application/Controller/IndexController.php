@@ -18,28 +18,23 @@ class IndexController extends AbstractActionController
     public function indexAction()
     {
 
-        // Initialize view model
+        // Initialize the view model
         $view = new ViewModel();
 
-        // Get array of images
-        $iterator = new DirectoryIterator('public/img/header_images');
-
-        // print_r($images); die(); // Debugging
-
         // Build array of file names
-        foreach ($iterator as $file) {
-            if (!$file->isDot()) {
-                $headerImages[] = $file->getFilename();
-            }
-        }
+        // foreach (new DirectoryIterator('public/img/header_images') as $file) {
+        //     if (!$file->isDot()) {
+        //         $headerImages[] = $file->getFilename();
+        //     }
+        // }
 
         // print_r($headerImages); die(); // Debugging
 
         // Shuffle the array
-        shuffle($headerImages);
+        // shuffle($headerImages);
 
         // Pass header image to the view
-        $view->setVariable('headerImage', $headerImages[0]);
+        // $view->setVariable('headerImage', $headerImages[0]);
 
         return $view;
     }
