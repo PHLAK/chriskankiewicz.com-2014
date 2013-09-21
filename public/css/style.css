@@ -17,7 +17,7 @@ body {
     background-image: url('/img/header_images/1.jpg');
     background-position: center;
     background-size: cover;
-    padding: 30px 0;
+    padding: 50px 0;
 }
 
 #site-title {
@@ -54,7 +54,7 @@ body {
     font-size: 6rem;
     font-weight: 700;
     margin: 0;
-    opacity: 0.8;
+    opacity: 0.9;
     text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
 }
 
@@ -63,12 +63,16 @@ body {
     display: block;
     font-size: 2rem;
     line-height: 2rem;
-    opacity: 0.8;
+    opacity: 0.9;
     text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
 }
 
 .contact-info {
     padding: 20px 0;
+}
+
+#site-nav {
+    margin: 0;
 }
 
 
@@ -137,20 +141,11 @@ body {
 /* -----| CONTENT AREA |----------------------------------------------------- */
 /* -------------------------------------------------------------------------- */
 
-#content-area {
-    padding: 0 20px;
-}
-
-#content-area .container > *:last-child {
-    margin-bottom: 0;
-    padding-bottom: 0;
-}
-
 .card {
     border-radius: 2px;
     background-color: #FFF;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    margin: 40px 0;
+    margin: 50px 0;
     position: relative;
 }
 
@@ -194,7 +189,6 @@ body {
 #site-footer {
     background-color: #222;
     color: #FFF;
-    margin: 50px 0 0;
     padding: 50px;
     text-align: center;
 }
