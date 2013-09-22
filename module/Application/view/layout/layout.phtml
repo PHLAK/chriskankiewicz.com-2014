@@ -38,17 +38,17 @@
 
     <body>
 
-        <div id="site-header">
+        <div class="site-header">
             <div class="container">
 
                 <div class="row">
 
                     <div class="col-md-12">
 
-                        <a href="/" id="site-title" class="clearfix">
+                        <a href="/" class="site-title clearfix">
 
                                 <span class="title-img">
-                                    <?php echo $this->gravatar('Chris@ChrisKankiewicz.com')->setImgSize(300)->setAttribs(array('class' => 'img-rounded img-responsive')); ?>
+                                    <?php echo $this->gravatar('Chris@ChrisKankiewicz.com')->setImgSize(400)->setAttribs(array('class' => 'img-rounded img-responsive')); ?>
                                 </span>
 
                                 <span class="title-text">
@@ -69,7 +69,7 @@
             </div>
         </div>
 
-        <nav id="site-nav" class="navbar navbar-inverse navbar-static-top">
+        <nav class="site-nav navbar navbar-inverse navbar-static-top">
             <div class="container">
                 <div class="collapse navbar-collapse navbar-ex1-collapse">
                     <ul class="nav navbar-nav">
@@ -79,7 +79,7 @@
                         <li><a href="#">Blog</a></li>
                     </ul>
 
-                    <div id="social-icons" class="navbar-text navbar-right">
+                    <div class="social-icons navbar-text navbar-right">
 
                         Follow:
 
@@ -107,13 +107,13 @@
             </div>
         </nav>
 
-        <div id="content-area">
+        <div class="content-area">
 
             <?php echo $this->content; ?>
 
         </div>
 
-        <div id="site-footer">
+        <div class="site-footer">
             &copy; <?php echo date('Y'); ?> <a href="/">Chris Kankiewicz</a>
         </div>
 

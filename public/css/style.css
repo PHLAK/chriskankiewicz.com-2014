@@ -13,32 +13,32 @@ body {
 /* -----| HEADER |----------------------------------------------------------- */
 /* -------------------------------------------------------------------------- */
 
-#site-header {
+.site-header {
     background-image: url('/img/header_images/tracks.jpg');
     background-position: center;
     background-size: cover;
     padding: 50px 0;
 }
 
-#site-title {
+.site-title {
     display: block;
     line-height: 3rem;
     margin: 0;
 }
 
-#site-title:hover {
+.site-title:hover {
     text-decoration: none;
 }
 
-#site-title .title-img {
-    display: inline-block;
+.title-img {
+    display: block;
     float: left;
     margin-right: -100%;
     width: 120px;
 }
 
-#site-title .title-text {
-    display: inline-block;
+.title-text {
+    display: block;
     float: left;
     margin: 17px 0;
     margin-left: 150px;
@@ -71,7 +71,7 @@ body {
     padding: 20px 0;
 }
 
-#site-nav {
+.site-nav {
     margin: 0;
 }
 
@@ -80,12 +80,12 @@ body {
 /* -----| SOCIAL ICONS |----------------------------------------------------- */
 /* -------------------------------------------------------------------------- */
 
-#social-icons {
+.social-icons {
     display: inline-block;
     margin: 12px 0;
 }
 
-#social-icons a {
+.social-icons a {
     background-color: #FFF;
     border-radius: 3px;
     color: #999;
@@ -95,44 +95,43 @@ body {
     text-align: center;
 }
 
-#social-icons a:hover,
-#social-icons a:active {
+.social-icons a:hover,
+.social-icons a:active {
     background-color: #333;
     color: #FFF;
     text-decoration: none;
 }
 
-#social-icons i {
+.social-icons i {
     display: block;
     font-size: 14px;
     height: 18px;
     line-height: 18px;
-    vertical-align: middle;
     width: 18px;
 }
 
-#social-icons .google-plus:hover,
-#social-icons .google-plus:active {
+.social-icons .google-plus:hover,
+.social-icons .google-plus:active {
     background-color: #DD4B39;
 }
 
-#social-icons .twitter:hover,
-#social-icons .twitter:active {
+.social-icons .twitter:hover,
+.social-icons .twitter:active {
     background-color: #00ACEE;
 }
 
-#social-icons .github:hover,
-#social-icons .github:active {
+.social-icons .github:hover,
+.social-icons .github:active {
     background-color: #CCC;
 }
 
-#social-icons .rss:hover,
-#social-icons .rss:active {
+.social-icons .rss:hover,
+.social-icons .rss:active {
     background-color: #F90;
 }
 
-#social-icons .email:hover,
-#social-icons .email:active {
+.social-icons .email:hover,
+.social-icons .email:active {
     background-color: #333;
 }
 
@@ -140,6 +139,10 @@ body {
 /* -------------------------------------------------------------------------- */
 /* -----| CONTENT AREA |----------------------------------------------------- */
 /* -------------------------------------------------------------------------- */
+
+.content-area {
+    padding: 0 20px;
+}
 
 .card {
     border-radius: 2px;
@@ -167,18 +170,14 @@ body {
     padding: 50px;
 }
 
-.card-body > *:first-child {
+.card-body > :first-child {
     margin-top: 0;
     padding-top: 0;
 }
 
-.card-body > *:last-child {
+.card-body > :last-child {
     margin-bottom: 0;
     padding-bottom: 0;
-}
-
-#intro {
-    text-align: justify;
 }
 
 
@@ -186,19 +185,28 @@ body {
 /* -----| FOOTER |----------------------------------------------------------- */
 /* -------------------------------------------------------------------------- */
 
-#site-footer {
+.site-footer {
     background-color: #222;
     color: #FFF;
     padding: 50px;
     text-align: center;
 }
 
-#site-footer a {
+.site-footer a {
     color: #FFF;
 }
 
-#site-footer a:hover {
+.site-footer a:hover {
     text-decoration: underline;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/* -----| MISCELLANEOUS |---------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+
+.text-justify {
+    text-align: justify;
 }
 
 
@@ -208,8 +216,29 @@ body {
 
 @media (max-width: 767px) {
 
-    #site-title .title-text {
+    .title-img {
         display: block;
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+
+    .title-img img {
+        display: inline-block;
+    }
+
+    .title-text {
+        display: block;
+        float: none;
+        margin: 17px 0;
+    }
+
+    .title-text h1 {
+        font-size: 4.5rem;
+    }
+
+    .title-text small {
+        font-size: 1.75rem;
     }
 
 }
