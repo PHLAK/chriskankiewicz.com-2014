@@ -3,7 +3,6 @@ $(document).ready(function() {
     // Enable Tooltips
     $('[rel="tooltip"]').tooltip();
 
-
     // Affix navbar on page load
     affixNavbar();
 

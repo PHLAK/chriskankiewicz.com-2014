@@ -40,9 +40,11 @@ body {
 .title-text {
     display: block;
     float: left;
-    margin: 17px 0;
+    margin: 17px 0 0;
     margin-left: 150px;
+    opacity: 0.9;
     text-align: center;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.75);
 }
 
 .title-img img {
@@ -54,8 +56,6 @@ body {
     font-size: 6rem;
     font-weight: 700;
     margin: 0;
-    opacity: 0.9;
-    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.75);
 }
 
 .title-text small {
@@ -63,8 +63,6 @@ body {
     display: block;
     font-size: 2rem;
     line-height: 2rem;
-    opacity: 0.9;
-    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.75);
 }
 
 .contact-info {
@@ -93,7 +91,7 @@ body {
 
 .follow-github:hover,
 .follow-github:active {
-    background-color: #555 !important;
+    background-color: #404040 !important;
 }
 
 .follow-rss:hover,
@@ -172,6 +170,11 @@ body {
 /* -----| MISCELLANEOUS |---------------------------------------------------- */
 /* -------------------------------------------------------------------------- */
 
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > li > a:focus {
+    background-color: #404040;
+}
+
 .text-justify {
     text-align: justify;
 }
@@ -182,6 +185,10 @@ body {
 /* -------------------------------------------------------------------------- */
 
 @media (max-width: 767px) {
+
+    .site-header {
+        padding: 20px 0;
+    }
 
     .title-img {
         display: block;
@@ -197,7 +204,7 @@ body {
     .title-text {
         display: block;
         float: none;
-        margin: 17px 0;
+        margin: 17px 0 0;
     }
 
     .title-text h1 {
