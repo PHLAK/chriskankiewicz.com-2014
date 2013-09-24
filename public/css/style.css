@@ -14,7 +14,7 @@ body {
 /* -------------------------------------------------------------------------- */
 
 .site-header {
-    background-image: url('/img/header_images/tracks.jpg');
+    background-image: url('/img/tracks.jpg');
     background-position: center;
     background-size: cover;
     padding: 50px 0;
