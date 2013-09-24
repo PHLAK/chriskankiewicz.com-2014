@@ -72,67 +72,33 @@ body {
 }
 
 .site-nav {
+    border: none;
     margin: 0;
 }
 
 
 /* -------------------------------------------------------------------------- */
-/* -----| SOCIAL ICONS |----------------------------------------------------- */
+/* -----| FOLLOW ICONS |----------------------------------------------------- */
 /* -------------------------------------------------------------------------- */
 
-.social-icons {
-    display: inline-block;
-    margin: 12px 0;
+.follow-google-plus:hover,
+.follow-google-plus:active {
+    background-color: #DD4B39 !important;
 }
 
-.social-icons a {
-    background-color: #FFF;
-    border-radius: 3px;
-    color: #999;
-    display: inline-block;
-    margin: 0 0 0 5px;
-    padding: 4px;
-    text-align: center;
+.follow-twitter:hover,
+.follow-twitter:active {
+    background-color: #00ACEE !important;
 }
 
-.social-icons a:hover,
-.social-icons a:active {
-    background-color: #333;
-    color: #FFF;
-    text-decoration: none;
+.follow-github:hover,
+.follow-github:active {
+    background-color: #555 !important;
 }
 
-.social-icons i {
-    display: block;
-    font-size: 14px;
-    height: 18px;
-    line-height: 18px;
-    width: 18px;
-}
-
-.social-icons .google-plus:hover,
-.social-icons .google-plus:active {
-    background-color: #DD4B39;
-}
-
-.social-icons .twitter:hover,
-.social-icons .twitter:active {
-    background-color: #00ACEE;
-}
-
-.social-icons .github:hover,
-.social-icons .github:active {
-    background-color: #CCC;
-}
-
-.social-icons .rss:hover,
-.social-icons .rss:active {
-    background-color: #F90;
-}
-
-.social-icons .email:hover,
-.social-icons .email:active {
-    background-color: #333;
+.follow-rss:hover,
+.follow-rss:active {
+    background-color: #F90 !important;
 }
 
 
