@@ -27,7 +27,7 @@
         <!-- SCRIPTS -->
         <?php $this->headScript()->appendFile('//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js'); ?>
         <?php $this->headScript()->appendFile($this->basePath() . '/js/bootstrap.min.js'); ?>
-        <?php $this->headScript()->appendFile($this->basePath() . '/js/chriskankiewicz.js'); ?>
+        <?php $this->inlineScript()->appendFile($this->basePath() . '/js/chriskankiewicz.js'); ?>
         <?php echo $this->headScript(); ?>
 
         <!-- META -->
@@ -71,52 +71,46 @@
 
         <nav class="site-nav navbar navbar-inverse navbar-static-top">
             <div class="container">
-                <div class="collapse navbar-collapse navbar-ex1-collapse">
-                    <ul class="nav navbar-nav">
-                        <li class="active"><a href="/" title="Home"><i class="icon-home icon-large"></i></a></li>
-                        <li><a href="#">Projects</a></li>
-                        <li><a href="#">Contact</a></li>
-                        <li><a href="#">Blog</a></li>
-                    </ul>
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="/" title="Home"><i class="icon-home icon-large"></i></a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
 
-                    <div class="navbar-right">
-                        <div class="navbar-text">
-                            Follow:
-                        </div>
+                <div class="navbar-right">
 
-                        <ul class="nav navbar-nav">
-                            <li>
-                                <a href="http://goo.gl/KTHmpb" class="follow-google-plus" title="Google+" rel="tooltip">
-                                    <i class="icon-google-plus icon-large"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="http://goo.gl/xpVJzg" class="follow-twitter" title="Twitter" rel="tooltip">
-                                    <i class="icon-twitter icon-large"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="http://goo.gl/3Wur6L" class="follow-github" title="GitHub" rel="tooltip">
-                                    <i class="icon-github icon-large"></i>
-                                </a>
-                            </li>
-                            <?php /*
-                            <li>
-                                <a href="http://goo.gl/lDpwxg" class="follow-rss" title="Blog" rel="tooltip" data-placement="bottom">
-                                    <i class="icon-rss icon-large"></i>
-                                </a>
-                            </li>
-                            */ ?>
-                        </ul>
-
-
-
-
-
-
+                    <div class="navbar-text">
+                        Follow:
                     </div>
 
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a href="http://goo.gl/KTHmpb" class="follow-google-plus" title="Google+" rel="tooltip">
+                                <i class="icon-google-plus icon-large"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://goo.gl/xpVJzg" class="follow-twitter" title="Twitter" rel="tooltip">
+                                <i class="icon-twitter icon-large"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://goo.gl/3Wur6L" class="follow-github" title="GitHub" rel="tooltip">
+                                <i class="icon-github icon-large"></i>
+                            </a>
+                        </li>
+                        <?php /*
+                        <li>
+                            <a href="http://goo.gl/lDpwxg" class="follow-rss" title="Blog" rel="tooltip" data-placement="bottom">
+                                <i class="icon-rss icon-large"></i>
+                            </a>
+                        </li>
+                        */ ?>
+                    </ul>
+
                 </div>
+
             </div>
         </nav>
 
