@@ -2,6 +2,10 @@
 /* -----| GENERAL |---------------------------------------------------------- */
 /* -------------------------------------------------------------------------- */
 
+html {
+    min-width: 480px;
+}
+
 body {
     background-color: #E5E5E5;
     font-family: 'Oxygen', sans-serif;
@@ -184,11 +188,7 @@ body {
 /* -----| RESPONSIVE |------------------------------------------------------- */
 /* -------------------------------------------------------------------------- */
 
-@media (max-width: 767px) {
-
-    .site-header {
-        padding: 20px 0;
-    }
+@media (max-width: 592px) {
 
     .title-img {
         display: block;
@@ -205,6 +205,18 @@ body {
         display: block;
         float: none;
         margin: 17px 0 0;
+    }
+
+}
+
+@media (max-width: 767px) {
+
+    .site-header {
+        padding: 20px 0;
+    }
+
+    .title-img img {
+        display: inline-block;
     }
 
     .title-text h1 {
