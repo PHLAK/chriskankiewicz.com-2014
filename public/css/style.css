@@ -191,10 +191,7 @@ body {
 @media (max-width: 640px) {
 
     .title-img {
-        display: block;
-        float: none;
-        text-align: center;
-        width: 100%;
+        display: none;
     }
 
     .title-img img {
@@ -204,7 +201,7 @@ body {
     .title-text {
         display: block;
         float: none;
-        margin: 17px 0 0;
+        margin: 0;
     }
 
 }
