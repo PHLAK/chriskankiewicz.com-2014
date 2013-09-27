@@ -224,6 +224,10 @@ body {
         font-size: 1.75rem;
     }
 
+    .site-nav {
+        min-width: 480px;
+    }
+
     .navbar {
         padding: 0 20px;
     }
