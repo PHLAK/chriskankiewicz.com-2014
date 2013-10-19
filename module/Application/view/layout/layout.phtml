@@ -2,133 +2,131 @@
 
 <html lang="en">
 
+<head>
+
+    <title>Chris Kankiewicz &bull; Web Application Developer</title>
+    <link href="/img/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+
+
+    <!-- META -->
+    <?php $this->headMeta()->setCharset('utf-8'); ?>
+    <?php $this->headMeta()->appendName('viewport', 'width=480, initial-scale=0.8'); ?>
+
+    <?php echo $this->headMeta(); ?>
+
+    <!-- STYLES / FONTS -->
+    <?php $this->headLink()->appendStylesheet($this->basePath() . '/css/bootstrap.min.css'); ?>
+    <?php $this->headLink()->appendStylesheet($this->basePath() . '/css/font-awesome.min.css'); ?>
+    <?php $this->headLink()->appendStylesheet($this->basePath() . '/css/style.css'); ?>
+
+    <?php $this->headLink()->appendStylesheet('//fonts.googleapis.com/css?family=Arvo|Oxygen:300,400,700'); ?>
+
+    <?php echo $this->headLink(); ?>
+
+    <!-- SCRIPTS -->
+    <?php $this->headScript()->appendFile('//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js'); ?>
+    <?php $this->headScript()->appendFile($this->basePath() . '/js/bootstrap.min.js'); ?>
+    <?php $this->inlineScript()->appendFile($this->basePath() . '/js/chriskankiewicz.js'); ?>
+
+    <?php echo $this->headScript(); ?>
+
+</head>
+
 <?php $children = $this->viewModel()->getCurrent()->getChildren(); $child = $children[0]; ?>
 
-    <head>
-        <?php echo $this->headTitle('Chris Kankiewicz • Web Application Developer'); ?>
+<body>
 
-        <?php echo $this->headLink(array('rel' => 'shortcut icon', 'type' => 'image/vnd.microsoft.icon', 'href' => $this->basePath() . '/img/favicon.ico')); ?>
+    <div class="site-header">
+        <div class="container">
 
-        <!-- STYLES / FONTS -->
-        <?php $this->headLink()->appendStylesheet($this->basePath() . '/css/bootstrap.min.css'); ?>
-        <?php $this->headLink()->appendStylesheet($this->basePath() . '/css/font-awesome.min.css'); ?>
-        <?php $this->headLink()->appendStylesheet($this->basePath() . '/css/style.css'); ?>
+            <div class="row">
 
-        <?php $this->headLink()->appendStylesheet('//fonts.googleapis.com/css?family=Arvo|Oxygen:300,400,700'); ?>
+                <div class="col-md-12">
 
-        <?php echo $this->headLink(); ?>
+                    <a href="/" class="site-title clearfix">
 
-        <?php /*
-        <style type="text/css">
-            #site-header { background-image: url(/img/header_images/<?php echo $child->headerImage; ?>) !important; }
-        </style>
-        */ ?>
+                            <span class="title-img">
+                                <?php echo $this->gravatar('Chris@ChrisKankiewicz.com')->setImgSize(120)->setAttribs(array('class' => 'img-rounded img-responsive')); ?>
+                            </span>
 
-        <!-- SCRIPTS -->
-        <?php $this->headScript()->appendFile('//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js'); ?>
-        <?php $this->headScript()->appendFile($this->basePath() . '/js/bootstrap.min.js'); ?>
-        <?php $this->inlineScript()->appendFile($this->basePath() . '/js/chriskankiewicz.js'); ?>
-        <?php echo $this->headScript(); ?>
+                            <span class="title-text">
+                                <h1>Chris Kankiewicz</h1>
+                                <small>
+                                    Web Application Developer &bull; Phoenix, Arizona
+                                </small>
+                            </span>
 
-        <!-- META -->
-        <meta charset="utf-8">
-        <?php echo $this->headMeta()->appendName('viewport', 'width=480, initial-scale=0.8'); ?>
+                        </div>
 
-    </head>
-
-    <body>
-
-        <div class="site-header">
-            <div class="container">
-
-                <div class="row">
-
-                    <div class="col-md-12">
-
-                        <a href="/" class="site-title clearfix">
-
-                                <span class="title-img">
-                                    <?php echo $this->gravatar('Chris@ChrisKankiewicz.com')->setImgSize(120)->setAttribs(array('class' => 'img-rounded img-responsive')); ?>
-                                </span>
-
-                                <span class="title-text">
-                                    <h1>Chris Kankiewicz</h1>
-                                    <small>
-                                        Web Application Developer &bull; Phoenix, Arizona
-                                    </small>
-                                </span>
-
-                            </div>
-
-                        </a>
-
-                    </div>
+                    </a>
 
                 </div>
 
             </div>
-        </div>
 
-        <nav class="site-nav navbar navbar-inverse navbar-static-top">
-            <div class="container">
+        </div>
+    </div>
+
+    <nav class="site-nav navbar navbar-inverse navbar-static-top">
+        <div class="container">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="/" title="Home" rel="tooltip" data-placement="bottom"><i class="icon-home icon-large"></i></a></li>
+                <?php /* <li><a href="#">Projects</a></li>
+                <li><a href="#">Contact</a></li> */ ?>
+                <li><a href="http://blog.chriskankiewicz.com">Blog</a></li>
+            </ul>
+
+            <div class="navbar-right">
+
+                <div class="navbar-text">
+                    Follow:
+                </div>
+
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="/" title="Home" rel="tooltip" data-placement="bottom"><i class="icon-home icon-large"></i></a></li>
-                    <?php /* <li><a href="#">Projects</a></li>
-                    <li><a href="#">Contact</a></li> */ ?>
-                    <li><a href="http://blog.chriskankiewicz.com">Blog</a></li>
+                    <li>
+                        <a href="http://goo.gl/KTHmpb" class="follow-google-plus" title="Google+" rel="tooltip" data-placement="bottom">
+                            <i class="icon-google-plus icon-large"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://goo.gl/xpVJzg" class="follow-twitter" title="Twitter" rel="tooltip" data-placement="bottom">
+                            <i class="icon-twitter icon-large"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://goo.gl/3Wur6L" class="follow-github" title="GitHub" rel="tooltip" data-placement="bottom">
+                            <i class="icon-github icon-large"></i>
+                        </a>
+                    </li>
+                    <?php /* <li>
+                        <a href="http://goo.gl/lDpwxg" class="follow-rss" title="Blog" rel="tooltip">
+                            <i class="icon-rss icon-large"></i>
+                        </a> */ ?>
+                    </li>
                 </ul>
 
-                <div class="navbar-right">
-
-                    <div class="navbar-text">
-                        Follow:
-                    </div>
-
-                    <ul class="nav navbar-nav">
-                        <li>
-                            <a href="http://goo.gl/KTHmpb" class="follow-google-plus" title="Google+" rel="tooltip" data-placement="bottom">
-                                <i class="icon-google-plus icon-large"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="http://goo.gl/xpVJzg" class="follow-twitter" title="Twitter" rel="tooltip" data-placement="bottom">
-                                <i class="icon-twitter icon-large"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="http://goo.gl/3Wur6L" class="follow-github" title="GitHub" rel="tooltip" data-placement="bottom">
-                                <i class="icon-github icon-large"></i>
-                            </a>
-                        </li>
-                        <?php /* <li>
-                            <a href="http://goo.gl/lDpwxg" class="follow-rss" title="Blog" rel="tooltip">
-                                <i class="icon-rss icon-large"></i>
-                            </a> */ ?>
-                        </li>
-                    </ul>
-
-                </div>
-
             </div>
-        </nav>
-
-        <div class="content-area">
-
-            <?php echo $this->content; ?>
 
         </div>
+    </nav>
 
-        <div class="site-footer">
-            <div class="container">
-                623-252-6855 &nbsp;&bull;&nbsp;
-                <a href="mailto:Chris@ChrisKankiewicz.com">Chris@ChrisKankiewicz.com</a>
-                <br><br>
-                &copy; <?php echo date('Y'); ?> <a href="/">Chris Kankiewicz</a>
-            </div>
+    <div class="content-area">
+
+        <?php echo $this->content; ?>
+
+    </div>
+
+    <div class="site-footer">
+        <div class="container">
+            623-252-6855 &nbsp;&bull;&nbsp;
+            <a href="mailto:Chris@ChrisKankiewicz.com">Chris@ChrisKankiewicz.com</a>
+            <br><br>
+            &copy; <?php echo date('Y'); ?> <a href="/">Chris Kankiewicz</a>
         </div>
+    </div>
 
-        <?php echo $this->inlineScript(); ?>
+    <?php echo $this->inlineScript(); ?>
 
-    </body>
+</body>
 
 </html>
