@@ -268,11 +268,15 @@ body {
     }
 
     .card-body {
-        padding: 50px 25px 25px 25px;
+        padding: 40px 20px 20px;
     }
 
     .intro-card {
-        padding: 25px;
+        padding: 20px;
+    }
+
+    .card-title {
+        font-size: 26px;
     }
 
     .card-body h3 {
