@@ -3,15 +3,25 @@ $(document).ready(function() {
     // Enable Tooltips
     $('[rel="tooltip"]').tooltip();
 
-    // Resize header onload
-    // resizeHeader();
+    // Check nav position on page load
+    checkNavPosition();
 
-    // Resize header on window resize
-    // $(window).resize(resizeHeader);
+    // Check nav position on scroll
+    $(window).scroll(function() {
+        checkNavPosition();
+    });
+
+    // Check nav position on resize
+    $(window).resize(function() {
+        checkNavPosition();
+    });
 
 });
 
-function resizeHeader() {
-    var newHeight = $(window).height() / 3;
-    $('.header-bg').css('height', newHeight);
+function checkNavPosition() {
+    if ($(window).scrollTop() >= $('.header-bg').outerHeight()) {
+        $('.site-header').addClass('site-header-collapse');
+    } else {
+        $('.site-header').removeClass('site-header-collapse');
+    }
 }
