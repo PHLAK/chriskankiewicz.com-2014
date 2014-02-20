@@ -13,17 +13,22 @@ body {
 /* -----| HEADER |----------------------------------------------------------- */
 /* -------------------------------------------------------------------------- */
 
-.site-header {
-    background-image: url('/img/tracks.jpg');
+.header-bg {
+    background-image: url('/img/desert.jpg');
     background-position: center;
     background-size: cover;
-    padding: 50px 0;
+    height: 220px;
+}
+
+.site-header {
+    /*position: fixed;*/
+    top: 0;
+    width: 100%;
+    z-index: 9999;
 }
 
 .site-title {
-    display: block;
-    line-height: 3rem;
-    margin: 0;
+    display: inline-block;
 }
 
 .site-title:hover {
@@ -34,44 +39,52 @@ body {
     display: block;
     float: left;
     margin-right: -100%;
-    width: 120px;
+}
+
+.title-img img {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
 }
 
 .title-text {
     display: block;
     float: left;
-    margin: 17px 0 0;
-    margin-left: 150px;
-    opacity: 0.9;
-    text-align: center;
-    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.75);
-}
-
-.title-img img {
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+    margin: 0;
+    margin-left: 100px;
 }
 
 .title-text h1 {
     color: #FFF;
-    font-size: 6rem;
-    font-weight: 700;
-    margin: 0;
-}
-
-.title-text small {
-    color: #FFF;
-    display: block;
-    font-size: 2rem;
-    line-height: 2rem;
-}
-
-.contact-info {
-    padding: 20px 0;
+    font-family: Arvo;
+    font-size: 4rem;
+    font-weight: normal;
+    margin: 15px 0 0;
+    opacity: 0.85;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, .5);
 }
 
 .site-nav {
-    border: none;
-    margin: 0;
+    margin: 20px 0 0;
+    padding: 0;
+}
+
+.site-nav > li {
+    margin-left: 5px;
+}
+
+.site-nav > li > a {
+    color: #FFF;
+    display: block;
+    padding: 10px 15px;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, .5);
+    text-transform: uppercase;
+}
+
+.site-nav > li > a:hover {
+    background-color: rgba(0, 0, 0, .25);
+    text-decoration: none;
+    text-shadow: none;
 }
 
 
@@ -82,21 +95,25 @@ body {
 .follow-google-plus:hover,
 .follow-google-plus:active {
     background-color: #DD4B39 !important;
+    color: #FFF;
 }
 
 .follow-twitter:hover,
 .follow-twitter:active {
     background-color: #00ACEE !important;
+    color: #FFF;
 }
 
 .follow-github:hover,
 .follow-github:active {
     background-color: #404040 !important;
+    color: #FFF;
 }
 
 .follow-rss:hover,
 .follow-rss:active {
     background-color: #F90 !important;
+    color: #FFF;
 }
 
 
@@ -189,83 +206,19 @@ body {
 /* -----| RESPONSIVE |------------------------------------------------------- */
 /* -------------------------------------------------------------------------- */
 
-@media (max-width: 767px) {
+@media (max-width: 720px) {
 
-    .site-header {
-        padding: 20px 0;
-    }
-
-    .title-img img {
-        display: inline-block;
-    }
-
-    .title-text h1 {
-        font-size: 5rem;
-    }
-
-    .title-text small {
-        font-size: 1.75rem;
-    }
-
-    .navbar {
-        padding: 0 20px;
-    }
-
-    .navbar-nav {
-        float: left;
-        margin: 0;
-        padding-bottom: 0;
-        padding-top: 0;
-    }
-
-    .navbar-nav > li {
-        float: left;
-    }
-
-    .navbar-nav > li > a {
-        padding-bottom: 15px;
-        padding-top: 15px;
-    }
-
-    .navbar-right {
-        float: right !important;
-    }
-
-    .navbar-text {
-        display: none;
-        margin-left: 15px;
-        margin-right: 15px;
-    }
+    /* Styles here... */
 
 }
 
 @media (max-width: 640px) {
 
-    .title-img {
-        display: none;
-    }
-
-    .title-img img {
-        display: inline-block;
-    }
-
-    .title-text {
-        display: block;
-        float: none;
-        margin: 0;
-    }
+    /* Styles here... */
 
 }
 
 @media (max-width: 480px) {
-
-    .title-text h1 {
-        font-size: 3.8rem;
-    }
-
-    .title-text small {
-        font-size: 1.5rem;
-    }
 
     .card-body {
         padding: 40px 20px 20px;
