@@ -7,7 +7,6 @@
     <title>Chris Kankiewicz &bull; Web Application Developer</title>
     <link href="/img/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
 
-
     <!-- META -->
     <?php $this->headMeta()->setCharset('utf-8'); ?>
     <?php $this->headMeta()->appendName('viewport', 'width=device-width, initial-scale=1.0'); ?>
@@ -36,77 +35,85 @@
 
 <body>
 
-    <div class="site-header">
-        <div class="container">
+    <div class="header-bg">
 
-            <div class="row">
+        <div class="site-header">
+            <div class="container">
 
-                <div class="col-md-12">
+                <a href="/" class="site-title clearfix">
 
-                    <a href="/" class="site-title clearfix">
+                    <span class="title-img">
+                        <?php echo $this->gravatar('Chris@ChrisKankiewicz.com')->setImgSize(75); ?>
+                    </span>
 
-                        <span class="title-img">
-                            <?php echo $this->gravatar('Chris@ChrisKankiewicz.com')->setImgSize(120)->setAttribs(array('class' => 'img-rounded img-responsive')); ?>
-                        </span>
+                    <span class="title-text">
+                        <h1>Chris Kankiewicz</h1>
+                    </span>
 
-                        <span class="title-text">
-                            <h1>Chris Kankiewicz</h1>
-                            <small>
-                                Web Application Developer &bull; Phoenix, Arizona
-                            </small>
-                        </span>
+                </a>
 
-                    </a>
+                <ul class="site-nav list-inline pull-right">
 
-                </div>
-
-            </div>
-
-        </div>
-    </div>
-
-    <nav class="site-nav navbar navbar-inverse navbar-static-top">
-        <div class="container">
-            <ul class="nav navbar-nav">
-                <li class="active"><a href="/" title="Home" rel="tooltip" data-placement="bottom"><i class="fa fa-home fa-lg"></i></a></li>
-                <?php /* <li><a href="#">Projects</a></li>
-                <li><a href="#">Contact</a></li> */ ?>
-                <li><a href="http://blog.chriskankiewicz.com">Blog</a></li>
-            </ul>
-
-            <div class="navbar-right">
-
-                <div class="navbar-text">
-                    Follow:
-                </div>
-
-                <ul class="nav navbar-nav">
                     <li>
-                        <a href="http://goo.gl/KTHmpb" class="follow-google-plus" title="Google+" rel="tooltip" data-placement="bottom">
-                            <i class="fa fa-google-plus fa-lg"></i>
-                        </a>
+                        <a href="/">Home</a>
                     </li>
+
                     <li>
-                        <a href="http://goo.gl/xpVJzg" class="follow-twitter" title="Twitter" rel="tooltip" data-placement="bottom">
-                            <i class="fa fa-twitter fa-lg"></i>
-                        </a>
+                        <a href="http://blog.chriskankiewicz.com">Blog</a>
                     </li>
-                    <li>
-                        <a href="http://goo.gl/3Wur6L" class="follow-github" title="GitHub" rel="tooltip" data-placement="bottom">
-                            <i class="fa fa-github fa-lg"></i>
-                        </a>
-                    </li>
-                    <?php /* <li>
-                        <a href="http://goo.gl/lDpwxg" class="follow-rss" title="Blog" rel="tooltip">
-                            <i class="fa fa-rss fa-lg"></i>
-                        </a>
-                    </li> */ ?>
+
                 </ul>
 
             </div>
-
         </div>
-    </nav>
+
+    </div>
+
+    <div class="sub-text">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-6">
+                    Web Application Developer &bull; Phoenix, Arizona
+                </div>
+
+                <div class="col-md-6 text-right">
+
+                    <ul class="list-inline">
+
+                        <li>Follow:</li>
+
+                        <li>
+                            <a href="http://goo.gl/KTHmpb" class="follow-google-plus" title="Google+" rel="tooltip" data-placement="bottom">
+                                <i class="fa fa-google-plus fa-lg"></i>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="http://goo.gl/xpVJzg" class="follow-twitter" title="Twitter" rel="tooltip" data-placement="bottom">
+                                <i class="fa fa-twitter fa-lg"></i>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="http://goo.gl/3Wur6L" class="follow-github" title="GitHub" rel="tooltip" data-placement="bottom">
+                                <i class="fa fa-github fa-lg"></i>
+                            </a>
+                        </li>
+
+                        <?php /* <li>
+                            <a href="http://goo.gl/lDpwxg" class="follow-rss" title="Blog" rel="tooltip">
+                                <i class="fa fa-rss fa-lg"></i>
+                            </a>
+                        </li> */ ?>
+
+                    </ul>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
 
     <div class="content-area">
 
