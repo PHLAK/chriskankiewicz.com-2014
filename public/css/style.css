@@ -47,24 +47,24 @@ body {
 
 .title-img {
     display: block;
-    position: fixed;
-    width: 75px;
+    position: absolute;
+    top: -10px;
+    width: 90px;
 }
 
 .site-header-collapse .title-img {
+    top: -4px;
     width: 60px;
 }
 
 .title-img img {
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
-    border-bottom-left-radius: 6px;
-    border-bottom-right-radius: 6px;
 }
 
 .title-text {
     display: inline-block;
     margin: 0;
-    margin-left: 95px;
+    margin-left: 110px;
 }
 
 .site-header-collapse .title-text {
