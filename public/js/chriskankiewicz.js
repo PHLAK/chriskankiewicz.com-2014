@@ -16,6 +16,11 @@ $(document).ready(function() {
         checkNavPosition();
     });
 
+    // Toggle navbar state on button click
+    $('.navbar-toggle').click(function() {
+        $('.site-nav').toggleClass('expanded');
+    });
+
 });
 
 function checkNavPosition() {
