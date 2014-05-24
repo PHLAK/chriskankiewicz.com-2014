@@ -168,6 +168,12 @@ body {
     color: #FFF;
 }
 
+.follow-keybase:hover,
+.follow-keybase:active {
+    background-color: #FF8648 !important;
+    color: #FFF;
+}
+
 .follow-rss:hover,
 .follow-rss:active {
     background-color: #F90 !important;
