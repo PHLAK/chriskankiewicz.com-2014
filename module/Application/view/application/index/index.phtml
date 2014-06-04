@@ -77,6 +77,7 @@
             </div>
 
         </div>
+
     </div>
 
 
@@ -110,6 +111,7 @@
             </div>
 
         </div>
+
     </div>
 
 
@@ -171,6 +173,7 @@
             </div>
 
         </div>
+
     </div>
 
 
@@ -207,6 +210,66 @@
             </div>
 
         </div>
+
+    </div>
+
+    <div class="card map-card">
+
+        <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+
+        <script type="text/javascript">
+
+            function getGeocode(address) {
+
+                // Initialize location object
+                var location = new Object();
+
+                // Initialize geocoder object
+                var geocoder = new google.maps.Geocoder();
+
+                geocoder.geocode({ 'address': address }, function(results, status) {
+
+                    if (status == google.maps.GeocoderStatus.OK) {
+
+                        location['lat'] = results[0].geometry.location.lat();
+                        location['lng'] = results[0].geometry.location.lng();
+
+                    }
+
+                });
+
+                return location;
+
+            }
+
+            // Get location info for Phoenix, AZ
+            var geo = getGeocode('Phoenix, AZ');
+
+            // Initialize the Google map on load
+            google.maps.event.addDomListener(window, 'load', function() {
+
+                // Initialize the Google map
+                map = new google.maps.Map(document.getElementById('map-canvas'), {
+                    center: new google.maps.LatLng(geo.lat + 0.0196729, geo.lng),
+                    zoom: 10,
+                    disableDefaultUI: true,
+                    scrollwheel: false,
+                    zoomControl: true
+                });
+
+                // Place a marker
+                marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(geo.lat, geo.lng),
+                    map: map,
+                    draggable: false
+                });
+
+            });
+
+        </script>
+
+        <div id="map-canvas"></div>
+
     </div>
 
 </div>
