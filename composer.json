@@ -10,7 +10,7 @@
     "homepage": "http://www.chriskankiewicz.com",
     "require": {
         "php": ">=5.3.3",
-        "zendframework/zendframework": "2.2.*",
+        "zendframework/zendframework": "2.3.*",
         "stripe/stripe-php": "1.8.*"
     }
 }
