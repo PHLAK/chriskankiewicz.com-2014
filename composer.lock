@@ -1,7 +1,7 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
     "hash": "c1f513884f5fafe19406c8ddd4511b95",
@@ -56,16 +56,16 @@
         },
         {
             "name": "zendframework/zendframework",
-            "version": "2.4.2",
+            "version": "2.4.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/zendframework/zf2.git",
-                "reference": "6ca85dcf2e9de67beb9bffd4e121e5a3a730b649"
+                "reference": "eb6275e9227e9ed1995d326087488d3ea25811b5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zendframework/zf2/zipball/6ca85dcf2e9de67beb9bffd4e121e5a3a730b649",
-                "reference": "6ca85dcf2e9de67beb9bffd4e121e5a3a730b649",
+                "url": "https://api.github.com/repos/zendframework/zf2/zipball/eb6275e9227e9ed1995d326087488d3ea25811b5",
+                "reference": "eb6275e9227e9ed1995d326087488d3ea25811b5",
                 "shasum": ""
             },
             "require": {
@@ -169,7 +169,7 @@
                 "framework",
                 "zf2"
             ],
-            "time": "2015-05-11 16:17:05"
+            "time": "2015-06-17 19:32:51"
         },
         {
             "name": "zendframework/zendxml",
