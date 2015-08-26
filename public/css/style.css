@@ -162,6 +162,12 @@ body {
     color: #FFF;
 }
 
+.follow-linkedin:hover,
+.follow-linkedin:active {
+    background-color: #2672AE !important;
+    color: #FFF;
+}
+
 .follow-github:hover,
 .follow-github:active {
     background-color: #555 !important;
