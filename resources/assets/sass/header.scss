@@ -1,0 +1,83 @@
+.header-image {
+    background-image: url('/img/road.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+    transition: all .25s ease-in-out;
+}
+
+.sub-text {
+    border: none;
+    margin: 0;
+}
+
+.navbar-toggle {
+    background-color: rgba(0, 0, 0, .1);
+    border: 1px solid rgba(0, 0, 0, .15);
+    border-radius: 4px;
+    color: #FFF;
+    display: none;
+    float: right;
+    margin: 8px;
+    padding: 9px 10px;
+    position: relative;
+
+    &:hover {
+        background-color: rgba(0, 0, 0, .3);
+    }
+
+    .icon-bar {
+        background-color: rgba(255, 255, 255, .75);
+        border-radius: 1px;
+        display: block;
+        height: 2px;
+        width: 22px;
+    }
+
+}
+
+.follow-google-plus {
+    &:hover, &:active {
+        background-color: #DD4B39 !important;
+        color: #FFF;
+    }
+}
+
+.follow-twitter {
+    &:hover, &:active {
+        background-color: #00ACEE !important;
+        color: #FFF;
+    }
+}
+
+.follow-linkedin:hover {
+    &:hover, &:active {
+        background-color: #2672AE !important;
+        color: #FFF;
+    }
+}
+
+.follow-github {
+    &:hover, &:active {
+        background-color: #555 !important;
+        color: #FFF;
+    }
+}
+
+.follow-keybase {
+    &:hover, &:active {
+        background-color: #FF8648 !important;
+        color: #FFF;
+    }
+}
+
+.follow-rss {
+    &:hover, &:active {
+        background-color: #F90 !important;
+        color: #FFF;
+    }
+}
+
+.navbar-right {
+    margin-right: 0;
+}
