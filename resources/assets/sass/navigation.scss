@@ -1,14 +1,15 @@
-
 .site-navigation {
+
     background-color: rgba(0, 0, 0, .15);
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 9999;
-}
 
-.site-navigation * {
-    transition: all .25s ease-in-out;
+    * {
+        transition: all .25s ease-in-out;
+    }
+
 }
 
 .site-navigation-collapse {
@@ -16,11 +17,13 @@
 }
 
 .site-title {
-    display: inline-block;
-}
 
-.site-title:hover {
-    text-decoration: none;
+    display: inline-block;
+
+    &:hover {
+        text-decoration: none;
+    }
+
 }
 
 .title-img {
