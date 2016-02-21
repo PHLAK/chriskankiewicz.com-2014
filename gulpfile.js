@@ -24,8 +24,8 @@ elixir(function(mix) {
 
     // mix.version(['css/app.css', 'js/app.js']);
 
-    // mix.browserSync({
-    //     proxy: 'chriskankiewicz.com.dev'
-    // });
+    mix.browserSync({
+        proxy: 'chriskankiewicz.com.dev'
+    });
 
 });
