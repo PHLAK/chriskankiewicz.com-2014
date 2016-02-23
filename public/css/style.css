@@ -7849,7 +7849,7 @@ body {
       width: 90px; }
       .site-navigation .site-title .title-img img {
         box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5); }
-      @media (max-width: 768px) {
+      @media (max-width: 767px) {
         .site-navigation .site-title .title-img {
           top: -4px;
           width: 60px; } }
@@ -7868,7 +7868,7 @@ body {
         margin: 15px 0;
         padding: 0;
         text-shadow: 0 0 5px rgba(0, 0, 0, 0.25); }
-      @media (max-width: 768px) {
+      @media (max-width: 767px) {
         .site-navigation .site-title .title-text {
           margin-left: 75px; }
           .site-navigation .site-title .title-text h1 {
@@ -7899,7 +7899,7 @@ body {
         .site-navigation .site-nav > li > a:hover {
           background-color: rgba(0, 0, 0, 0.25);
           text-decoration: none; }
-        @media (max-width: 768px) {
+        @media (max-width: 767px) {
           .site-navigation .site-nav > li > a {
             padding: 15px 20px; } }
       @media (max-width: 480px) {
@@ -7961,7 +7961,7 @@ body {
   @media (min-width: 1200px) {
     .header-image {
       height: 350px; } }
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     .header-image {
       height: 250px; } }
   @media (max-width: 480px) {
@@ -7976,26 +7976,26 @@ body {
   .nav-collapse {
     margin-top: 10px; } }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .social-nav .navbar-text {
     display: none;
     text-align: center; } }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .social-nav > ul > li > a {
     padding-bottom: 15px;
     padding-top: 15px; } }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .social-nav > ul > li {
     display: inline-block;
     float: none !important; } }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .social-nav > ul {
     text-align: center; } }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .social-nav {
     margin-left: 0;
     width: 100%; } }
@@ -8027,7 +8027,7 @@ body {
 .navbar-right {
   margin-right: 0; }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .quip {
     text-align: center; } }
 
