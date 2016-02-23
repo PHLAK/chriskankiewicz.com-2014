@@ -12,27 +12,20 @@
         height: 250px;
     }
 
-    .title-img {
-        top: -4px;
-        width: 60px;
-    }
+    // .title-img {
+    //     top: -4px;
+    //     width: 60px;
+    // }
 
     .title-text {
+
         margin-left: 75px;
-    }
 
-    .title-text h1 {
-        font-size: 2.5rem;
-        margin: 10px 0 0;
-    }
+         h1 {
+            font-size: 2.5rem;
+            margin: 10px 0 0;
+        }
 
-    /*.social-nav {
-        display: none;
-    }*/
-
-    .social-nav > ul > li {
-        display: inline-block;
-        float: none !important;
     }
 
     .site-nav > li > a {
@@ -44,30 +37,36 @@
     }
 
     .social-nav {
+
         margin-left: 0;
         width: 100% ;
-    }
 
-    .social-nav .navbar-text {
-        display: none;
-        text-align: center;
-    }
+        .navbar-text {
+            display: none;
+            text-align: center;
+        }
 
-    .social-nav ul {
-        text-align: center;
-    }
+        > ul {
 
-    .social-nav ul > li {
-        float: left;
-    }
+            text-align: center;
 
-    .social-nav ul > li > a {
-        padding-bottom: 15px;
-        padding-top: 15px;
+            > li {
+
+                display: inline-block;
+                float: none !important;
+
+                > a {
+                    padding-bottom: 15px;
+                    padding-top: 15px;
+                }
+
+            }
+
+        }
+
     }
 
 }
-
 
 @media (max-width: 480px) {
 
@@ -83,8 +82,10 @@
         margin-left: 0;
     }
 
-    .site-header-collapse .title-text {
-        margin-left: 0;
+    .site-navigation-collapse {
+        .title-text {
+            margin-left: 0;
+        }
     }
 
     .nav-collapse {
@@ -96,25 +97,33 @@
     }
 
     .site-nav {
+
         border-top: 1px solid rgba(0, 0, 0, .15);
         clear: both;
         display: none;
         float: none;
         margin: 0 -15px;
         transition: all .25s ease-in-out;
-    }
 
-    .site-nav > li {
-        display: block;
-        float: none;
-    }
+        > li {
+            display: block;
+            float: none;
+        }
 
-    .site-nav.expanded {
-        display: block;
+        &.expanded {
+            display: block;
+        }
+
     }
 
     .card-body {
+
         padding: 40px 20px 20px;
+
+        h3 {
+            font-size: 18px;
+        }
+
     }
 
     .intro-card {
@@ -123,10 +132,6 @@
 
     .card-title {
         font-size: 26px;
-    }
-
-    .card-body h3 {
-        font-size: 18px;
     }
 
 }
