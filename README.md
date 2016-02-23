@@ -7,56 +7,88 @@ Home page of Chris Kankiewicz.
 Development
 -----------
 
-### Prerequisites
+#### Prerequisites
 
-Most prerequisites are provided with Homestead, the development VM provided by
-Laravel. However you will need a few things to get this
+  1. [git](https://git-scm.com) - Distributed source control
 
-  1. [git](https://git-scm.com)
-  2. [PHP](https://secure.php.net) >= 5.5
-  3. [Composer](https://getcomposer.org) (Optional)
-  4. [NodeJS + npm](https://nodejs.org) >= 4.3
-  5. [Virtualbox](https://www.virtualbox.org)
-  6. [Vagrant](https://www.vagrantup.com)
+     ```bash
+     sudo apt-get install git
+     ```
 
-Quick install (Ubuntu):
+  2. [PHP](https://secure.php.net) >= 5.5 - Web scripting language
 
-**git**
+     ```bash
+     sudo apt-get install php5-cli
+     ```
 
-  sudo apt-get install git
+  3. [Composer](https://getcomposer.org) (Optional) - Dependency manager for PHP
 
-**PHP**
+      ```bash
+      curl https://getcomposer.org/installer | php && sudo mv composer.phar /usr/local/bin/composer
+      ```
 
-    sudo apt-get install php5-cli
+  4. [NodeJS + npm](https://nodejs.org) >= 4.3 - Asset package manager
 
-**Composer**
+     ```bash
+     curl -sL https://deb.nodesource.com/setup_5.x | sudo -E bash -
+     sudo apt-get update && sudo apt-get install nodejs
+     ```
 
-    curl https://getcomposer.org/installer | php && sudo mv composer.phar /usr/local/bin/composer
+  5. [Virtualbox](https://www.virtualbox.org) - Virtualization platform
 
-**Node**
+     ```bash
+     echo "deb http://download.virtualbox.org/virtualbox/debian $(lsb_release -cs) contrib" | sudo tee /etc/apt/sources.list.d/virtualbox.list
+     wget -q https://www.virtualbox.org/download/oracle_vbox.asc -O- | sudo apt-key add -
+     sudo apt-get update && sudo apt-get install virtualbox-5.0
+     ```
 
-    curl -sL https://deb.nodesource.com/setup_5.x | sudo -E bash -
-    sudo apt-get update && sudo apt-get install nodejs
+  6. [Vagrant](https://www.vagrantup.com) - VM automation tool
 
-**Virtualbox**
+     Manual installation: <https://www.vagrantup.com/downloads.html>
 
-    echo "deb http://download.virtualbox.org/virtualbox/debian $(lsb_release -cs) contrib" | sudo tee /etc/apt/sources.list.d/virtualbox.list
-    wget -q https://www.virtualbox.org/download/oracle_vbox.asc -O- | sudo apt-key add -
-    sudo apt-get update && sudo apt-get install virtualbox-5.0
+#### Setting up your dev environment
 
-**Vagrant**
+  1. Clone the repo:
 
-Manual download: <https://www.vagrantup.com/downloads.html>
+     ```bash
+     git clone git@github.com:PHLAK/chriskankiewicz.com.git
+     ```
 
-### Setting up your dev environment
+  2. Install PHP dependencies:
 
-  1. Clone the repo: `git clone git@github.com:PHLAK/chriskankiewicz.com.git`
-  2. Install PHP dependencies: `php composer.phar install`
-  3. Install NodeJS dependencies: `npm install`
-  4. Initialize Homestead: `php vendor/bin/homestead make`
-  5. Configure Homestead: `nano Homestead.yml`
-  6. Edit hosts file: `sudo nano /etc/hosts`
-  7. Start the VM: `vagrant up`
+     ```bash
+     php composer.phar install
+     ```
+
+  3. Install NodeJS dependencies:
+
+     ```bash
+     npm install
+     ```
+
+  4. Initialize Homestead:
+
+     ```bash
+     php vendor/bin/homestead make
+     ```
+
+  5. Configure Homestead:
+
+     ```bash
+     nano Homestead.yml
+     ```
+
+  6. Edit hosts file:
+
+     ```bash
+     sudo nano /etc/hosts
+     ```
+
+  7. Start the VM:
+
+     ```bash
+     vagrant up
+     ```
 
 
 Production
