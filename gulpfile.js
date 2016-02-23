@@ -15,7 +15,7 @@ elixir(function(mix) {
 
     mix.sass(['app.scss'], 'public/css/style.css');
 
-    mix.browserify(['app.js'], 'public/js/app.js');
+    mix.browserify(['app.js'], 'public/js/all.js');
 
     mix.copy([
         'node_modules/bootstrap-sass/assets/assets/fonts/bootstrap',
@@ -23,9 +23,5 @@ elixir(function(mix) {
     ], 'public/fonts');
 
     // mix.version(['css/app.css', 'js/app.js']);
-
-    mix.browserSync({
-        proxy: 'chriskankiewicz.com.dev'
-    });
 
 });
