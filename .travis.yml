@@ -1,0 +1,7 @@
+language: php
+sudo: false
+install: php composer.phar install
+php:
+    - 5.5
+    - 5.6
+    - 7.0
