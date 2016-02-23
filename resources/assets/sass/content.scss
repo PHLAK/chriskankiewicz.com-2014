@@ -1,51 +1,81 @@
+.quip {
+    @include screen-medium {
+        text-align: center;
+    }
+}
+
 .content-area {
     /* padding: 0 15px; */
 }
 
 .card {
+
     border-radius: 2px;
     background-color: #FFF;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
     margin: 50px 0;
     position: relative;
 
-    .map-card {
+    &.intro-card {
+        @include screen-small {
+            padding: 20px;
+        }
+    }
+
+    &.map-card {
         overflow: hidden;
     }
 
-    .error-card {
+    &.error-card {
         margin-top: 100px;
     }
 
-}
+    .card-title {
 
-.card-title {
-    background-color: #8CC152;
-    border-radius: 2px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    color: #FFF;
-    display: inline-block;
-    font-family: Arvo, serif;
-    font-weight: normal;
-    margin: 0;
-    padding: 10px 15px;
-    position: absolute;
-    top: -10px;
-    left: -10px;
-}
+        background-color: #8CC152;
+        border-radius: 2px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        color: #FFF;
+        display: inline-block;
+        font-family: Arvo, serif;
+        font-weight: normal;
+        margin: 0;
+        padding: 10px 15px;
+        position: absolute;
+        top: -10px;
+        left: -10px;
 
-.card-body {
-    padding: 50px;
-}
+        @include screen-small {
+            font-size: 26px;
+        }
+    }
 
-.card-body > :first-child {
-    margin-top: 0;
-    padding-top: 0;
-}
+    .card-body {
 
-.card-body > :last-child {
-    margin-bottom: 0;
-    padding-bottom: 0;
+        padding: 50px;
+
+        h3 {
+            @include screen-small {
+                font-size: 18px;
+            }
+        }
+
+        > :first-child {
+            margin-top: 0;
+            padding-top: 0;
+        }
+
+        > :last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        @include screen-small {
+            padding: 40px 20px 20px;
+        }
+
+    }
+
 }
 
 #map-canvas {

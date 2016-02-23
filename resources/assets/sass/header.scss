@@ -1,9 +1,23 @@
 .header-image {
+
     background-image: url('/img/road.jpg');
     background-position: center;
     background-size: cover;
     height: 300px;
     transition: all .25s ease-in-out;
+
+    @include screen-large {
+        height: 350px;
+    }
+
+    @include screen-medium {
+        height: 250px;
+    }
+
+    @include screen-small {
+        height: 200px;
+    }
+
 }
 
 .sub-text {
@@ -11,27 +25,52 @@
     margin: 0;
 }
 
-.navbar-toggle {
-    background-color: rgba(0, 0, 0, .1);
-    border: 1px solid rgba(0, 0, 0, .15);
-    border-radius: 4px;
-    color: #FFF;
-    display: none;
-    float: right;
-    margin: 8px;
-    padding: 9px 10px;
-    position: relative;
+.nav-collapse {
+    @include screen-small {
+        margin-top: 10px;
+    }
+}
 
-    &:hover {
-        background-color: rgba(0, 0, 0, .3);
+.social-nav {
+
+    .navbar-text {
+
+        @include screen-medium {
+            display: none;
+            text-align: center;
+        }
+
     }
 
-    .icon-bar {
-        background-color: rgba(255, 255, 255, .75);
-        border-radius: 1px;
-        display: block;
-        height: 2px;
-        width: 22px;
+    > ul {
+
+        > li {
+
+            > a {
+
+                @include screen-medium {
+                    padding-bottom: 15px;
+                    padding-top: 15px;
+                }
+
+            }
+
+            @include screen-medium {
+                display: inline-block;
+                float: none !important;
+            }
+
+        }
+
+        @include screen-medium {
+            text-align: center;
+        }
+
+    }
+
+    @include screen-medium {
+        margin-left: 0;
+        width: 100% ;
     }
 
 }
@@ -50,7 +89,7 @@
     }
 }
 
-.follow-linkedin:hover {
+.follow-linkedin {
     &:hover, &:active {
         background-color: #2672AE !important;
         color: #FFF;

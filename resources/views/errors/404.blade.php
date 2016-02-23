@@ -4,8 +4,8 @@
 
     <div class="container">
 
-        <div class="card">
-            <div class="error-card card-body">
+        <div class="card error-card">
+            <div class="card-body">
 
                 <div class="error-hero text-center">
                     <div class="error-number">404</div>

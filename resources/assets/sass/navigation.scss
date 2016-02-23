@@ -10,90 +10,190 @@
         transition: all .25s ease-in-out;
     }
 
-}
+    .site-title {
 
-.site-navigation-collapse {
-    background-color: rgba(0, 0, 0, .65);
-}
+        display: inline-block;
 
-.site-title {
+        &:hover {
+            text-decoration: none;
+        }
 
-    display: inline-block;
+        .title-img {
 
-    &:hover {
-        text-decoration: none;
+            display: block;
+            position: absolute;
+            top: -10px;
+            width: 90px;
+
+            img {
+                box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+            }
+
+            @include screen-medium {
+                top: -4px;
+                width: 60px;
+            }
+
+            @include screen-small {
+                display: none;
+            }
+
+        }
+
+        .title-text {
+
+            display: inline-block;
+            margin: 0;
+            margin-left: 110px;
+
+            h1 {
+                color: #FFF;
+                font-family: Arvo;
+                font-size: 3.5rem;
+                font-weight: normal;
+                margin: 15px 0;
+                padding: 0;
+                text-shadow: 0 0 5px rgba(0, 0, 0, .25);
+            }
+
+            @include screen-medium {
+
+                margin-left: 75px;
+
+                 h1 {
+                    font-size: 2.5rem;
+                    margin: 10px 0 0;
+                }
+
+            }
+
+            @include screen-small {
+                margin-left: 0;
+            }
+
+        }
+
+    }
+
+    .site-nav {
+
+        float: right;
+        list-style: none outside none;
+        margin: 0;
+        margin-left: -5px;
+        padding: 0;
+
+        &.expanded {
+            @include screen-small {
+                display: block;
+            }
+        }
+
+        > li {
+
+            float: left;
+            margin: 0;
+            padding: 0;
+
+            > a {
+
+                color: #FFF;
+                display: block;
+                padding: 25px 20px;
+                text-transform: uppercase;
+                text-shadow: 0 0 3px rgba(0, 0, 0, .25);
+
+                &:hover {
+                    background-color: rgba(0, 0, 0, .25);
+                    text-decoration: none;
+                }
+
+                @include screen-medium {
+                    padding: 15px 20px;
+                }
+
+            }
+
+            @include screen-small {
+                display: block;
+                float: none;
+            }
+
+        }
+
+        @include screen-small {
+            border-top: 1px solid rgba(0, 0, 0, .15);
+            clear: both;
+            display: none;
+            float: none;
+            margin: 0 -15px;
+            transition: all .25s ease-in-out;
+        }
+
+    }
+
+    .navbar-toggle {
+
+        background-color: rgba(0, 0, 0, .1);
+        border: 1px solid rgba(0, 0, 0, .15);
+        border-radius: 4px;
+        color: #FFF;
+        display: none;
+        float: right;
+        margin: 8px;
+        padding: 9px 10px;
+        position: relative;
+
+        &:hover {
+            background-color: rgba(0, 0, 0, .3);
+        }
+
+        .icon-bar {
+            background-color: rgba(255, 255, 255, .75);
+            border-radius: 1px;
+            display: block;
+            height: 2px;
+            width: 22px;
+        }
+
+        @include screen-small {
+            display: block;
+        }
+
     }
 
 }
 
-.title-img {
-    display: block;
-    position: absolute;
-    top: -10px;
-    width: 90px;
-}
+.site-navigation-collapse {
 
-.site-navigation-collapse .title-img {
-    top: -4px;
-    width: 60px;
-}
+    background-color: rgba(0, 0, 0, .65);
 
-.title-img img {
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
-}
+    .site-title {
 
-.title-text {
-    display: inline-block;
-    margin: 0;
-    margin-left: 110px;
-}
+        .title-img {
+            top: -4px;
+            width: 60px;
+        }
 
-.site-navigation-collapse .title-text {
-    margin-left: 75px;
-}
+        .title-text {
 
-.title-text h1 {
-    color: #FFF;
-    font-family: Arvo;
-    font-size: 3.5rem;
-    font-weight: normal;
-    margin: 15px 0;
-    padding: 0;
-    text-shadow: 0 0 5px rgba(0, 0, 0, .25);
-}
+            margin-left: 75px;
 
-.site-navigation-collapse .title-text h1 {
-    font-size: 2.5rem;
-    margin: 10px 0;
-}
+            h1 {
+                font-size: 2.5rem;
+                margin: 10px 0;
+            }
 
-.site-nav {
-    float: right;
-    list-style: none outside none;
-    margin: 0;
-    margin-left: -5px;
-    padding: 0;
-}
+            @include screen-small {
+                margin-left: 0;
+            }
 
-.site-nav > li {
-    float: left;
-    margin: 0;
-    padding: 0;
-}
+        }
 
-.site-nav > li > a {
-    color: #FFF;
-    display: block;
-    padding: 25px 20px;
-    text-transform: uppercase;
-    text-shadow: 0 0 3px rgba(0, 0, 0, .25);
-}
+    }
 
-.site-navigation-collapse .site-nav > li > a {
-    padding: 15px 20px;
-}
+    .site-nav > li > a {
+        padding: 15px 20px;
+    }
 
-.site-nav > li > a:hover {
-    background-color: rgba(0, 0, 0, .25);
-    text-decoration: none;
 }

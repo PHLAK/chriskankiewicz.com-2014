@@ -4,8 +4,8 @@
 
     <div class="container">
 
-        <div class="card">
-            <div class="intro-card card-body">
+        <div class="card intro-card">
+            <div class="card-body">
                 <p class="lead text-justify">Self taught full stack web and application developer with
                 years of Linux experience and a desire to learn. Personal strengths include advanced
                 troubleshooting and problem solving skills in real-world situations, the capacity to
