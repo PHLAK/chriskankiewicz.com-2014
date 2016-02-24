@@ -1,4 +1,4 @@
-<div class="site-navigation">
+<div class="primary-navigation">
     <div class="container">
 
         <a href="{{ route('root') }}" class="site-title clearfix">
@@ -19,7 +19,7 @@
             <span class="icon-bar"></span>
         </button>
 
-        <ul class="site-nav">
+        <ul class="nav-links">
 
             <li>
                 <a href="{{ route('root') }}">Home</a>

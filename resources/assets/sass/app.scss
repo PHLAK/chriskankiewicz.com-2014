@@ -3,28 +3,7 @@
 
 @import url(https://fonts.googleapis.com/css?family=Arvo|Oxygen:300,400,700);
 
-@mixin screen-small {
-    @media (max-width: 480px) {
-        @content;
-    }
-}
-
-@mixin screen-medium {
-    @media (max-width: 767px) {
-        @content;
-    }
-}
-
-@mixin screen-large {
-    @media (min-width: 1200px) {
-        @content;
-    }
-}
-
-@import 'general';
-@import 'navigation';
-@import 'header';
-@import 'content';
-@import 'errors';
-@import 'footer';
-@import 'misc';
+@import 'variables/all';
+@import 'layout/all';
+@import 'content/all';
+@import 'misc/all';

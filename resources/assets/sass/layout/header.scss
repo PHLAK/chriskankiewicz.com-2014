@@ -1,0 +1,21 @@
+.header-image {
+
+    background-image: url('/img/road.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+    transition: all .25s ease-in-out;
+
+    @media (min-width: $screen-large-min) {
+        height: 350px;
+    }
+
+    @media (max-width: $screen-medium-max) {
+        height: 250px;
+    }
+
+    @media (max-width: $screen-small-max) {
+        height: 200px;
+    }
+
+}

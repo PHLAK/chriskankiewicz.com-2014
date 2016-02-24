@@ -1,6 +1,6 @@
 <div class="header-image"></div>
 
-<div class="sub-text navbar navbar-static-top navbar-inverse">
+<div class="secondary-navigation navbar navbar-static-top navbar-inverse">
     <div class="container">
 
         <div class="quip navbar-text">

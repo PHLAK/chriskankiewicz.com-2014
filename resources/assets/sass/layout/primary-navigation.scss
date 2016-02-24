@@ -1,4 +1,4 @@
-.site-navigation {
+.primary-navigation {
 
     background-color: rgba(0, 0, 0, .15);
     position: fixed;
@@ -29,12 +29,12 @@
                 box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
             }
 
-            @include screen-medium {
+            @media (max-width: $screen-medium-max) {
                 top: -4px;
                 width: 60px;
             }
 
-            @include screen-small {
+            @media (max-width: $screen-small-max) {
                 display: none;
             }
 
@@ -56,7 +56,7 @@
                 text-shadow: 0 0 5px rgba(0, 0, 0, .25);
             }
 
-            @include screen-medium {
+             @media (max-width: $screen-medium-max) {
 
                 margin-left: 75px;
 
@@ -67,7 +67,7 @@
 
             }
 
-            @include screen-small {
+            @media (max-width: $screen-small-max) {
                 margin-left: 0;
             }
 
@@ -75,7 +75,7 @@
 
     }
 
-    .site-nav {
+    .nav-links {
 
         float: right;
         list-style: none outside none;
@@ -84,7 +84,7 @@
         padding: 0;
 
         &.expanded {
-            @include screen-small {
+            @media (max-width: $screen-small-max) {
                 display: block;
             }
         }
@@ -108,20 +108,20 @@
                     text-decoration: none;
                 }
 
-                @include screen-medium {
+                @media (max-width: $screen-medium-max) {
                     padding: 15px 20px;
                 }
 
             }
 
-            @include screen-small {
+            @media (max-width: $screen-small-max) {
                 display: block;
                 float: none;
             }
 
         }
 
-        @include screen-small {
+        @media (max-width: $screen-small-max) {
             border-top: 1px solid rgba(0, 0, 0, .15);
             clear: both;
             display: none;
@@ -156,44 +156,44 @@
             width: 22px;
         }
 
-        @include screen-small {
+        @media (max-width: $screen-small-max) {
             display: block;
         }
 
     }
 
-}
+    &.primary-navigation-collapse {
 
-.site-navigation-collapse {
+        background-color: rgba(0, 0, 0, .65);
 
-    background-color: rgba(0, 0, 0, .65);
+        .site-title {
 
-    .site-title {
-
-        .title-img {
-            top: -4px;
-            width: 60px;
-        }
-
-        .title-text {
-
-            margin-left: 75px;
-
-            h1 {
-                font-size: 2.5rem;
-                margin: 10px 0;
+            .title-img {
+                top: -4px;
+                width: 60px;
             }
 
-            @include screen-small {
-                margin-left: 0;
+            .title-text {
+
+                margin-left: 75px;
+
+                h1 {
+                    font-size: 2.5rem;
+                    margin: 10px 0;
+                }
+
+                @media (max-width: $screen-small-max) {
+                    margin-left: 0;
+                }
+
             }
 
         }
 
-    }
+        .nav-links > li > a {
+            padding: 15px 20px;
+        }
 
-    .site-nav > li > a {
-        padding: 15px 20px;
     }
 
 }

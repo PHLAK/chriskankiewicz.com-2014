@@ -21,15 +21,15 @@ $(document).ready(function() {
 
     // Toggle navbar state on button click
     $('.navbar-toggle').click(function() {
-        $('.site-nav').toggleClass('expanded');
+        $('.nav-links').toggleClass('expanded');
     });
 
 });
 
 function checkNavPosition() {
     if ($(window).scrollTop() >= $('.header-image').outerHeight()) {
-        $('.site-navigation').addClass('site-navigation-collapse');
+        $('.primary-navigation').addClass('primary-navigation-collapse');
     } else {
-        $('.site-navigation').removeClass('site-navigation-collapse');
+        $('.primary-navigation').removeClass('primary-navigation-collapse');
     }
 }

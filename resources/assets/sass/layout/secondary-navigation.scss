@@ -1,0 +1,102 @@
+.secondary-navigation {
+
+    border: none;
+    margin: 0;
+
+    .quip {
+        @media (max-width: $screen-medium-max) {
+            text-align: center;
+        }
+    }
+
+    .social-nav {
+
+        @media (max-width: $screen-medium-max) {
+            margin-left: 0;
+            width: 100% ;
+        }
+
+        .navbar-text {
+
+            @media (max-width: $screen-medium-max) {
+                display: none;
+                text-align: center;
+            }
+
+        }
+
+        > .navbar-nav {
+
+            @media (max-width: $screen-medium-max) {
+                text-align: center;
+            }
+
+            > li {
+
+                @media (max-width: $screen-medium-max) {
+                    display: inline-block;
+                    float: none !important;
+                }
+
+                > a {
+
+                    &:hover, &:focus {
+                        background-color: #404040;
+                    }
+
+                    @media (max-width: $screen-medium-max) {
+                        padding-bottom: 15px;
+                        padding-top: 15px;
+                    }
+
+                    &.follow-google-plus {
+                        &:hover, &:active {
+                            background-color: #DD4B39 !important;
+                            color: #FFF;
+                        }
+                    }
+
+                    &.follow-twitter {
+                        &:hover, &:active {
+                            background-color: #00ACEE !important;
+                            color: #FFF;
+                        }
+                    }
+
+                    &.follow-linkedin {
+                        &:hover, &:active {
+                            background-color: #2672AE !important;
+                            color: #FFF;
+                        }
+                    }
+
+                    &.follow-github {
+                        &:hover, &:active {
+                            background-color: #555 !important;
+                            color: #FFF;
+                        }
+                    }
+
+                    &.follow-keybase {
+                        &:hover, &:active {
+                            background-color: #FF8648 !important;
+                            color: #FFF;
+                        }
+                    }
+
+                    &.follow-rss {
+                        &:hover, &:active {
+                            background-color: #F90 !important;
+                            color: #FFF;
+                        }
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+
+}
