@@ -26,6 +26,6 @@ elixir(function(mix) {
         'vendor/fortawesome/font-awesome/fonts'
     ], 'public/fonts');
 
-    // mix.version(['css/app.css', 'js/app.js']);
+    mix.version(['css/style.css', 'js/all.js']);
 
 });
