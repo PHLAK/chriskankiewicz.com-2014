@@ -15,11 +15,15 @@ elixir(function(mix) {
 
     mix.sass(['app.scss'], 'public/css/style.css');
 
-    mix.browserify(['app.js'], 'public/js/all.js');
+    mix.scripts([
+        'vendor/components/jquery/jquery.js',
+        'vendor/twbs/bootstrap-sass/assets/javascripts/bootstrap.js',
+        'resources/assets/js/app.js'
+    ], 'public/js/all.js', '.');
 
     mix.copy([
-        'node_modules/bootstrap-sass/assets/assets/fonts/bootstrap',
-        'node_modules/bootstrap-sass/assets/font-awesome/fonts'
+        'vendor/twbs/bootstrap-sass/assets/fonts/bootstrap',
+        'vendor/fortawesome/font-awesome/fonts'
     ], 'public/fonts');
 
     // mix.version(['css/app.css', 'js/app.js']);
