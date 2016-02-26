@@ -22,4 +22,15 @@ class TestCase extends Illuminate\Foundation\Testing\TestCase
 
         return $app;
     }
+
+    /**
+     * Get HTTP status code for specified route
+     * @param  string $route HTTP route
+     * @return int           HTTP status code
+     */
+    public function getStatusCode($route) {
+        $response = $this->call('GET', $route);
+        return $response->status();
+    }
+
 }
