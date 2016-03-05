@@ -1,4 +1,4 @@
-@extends('layouts.error')
+@extends('errors.layout')
 
 @section('content')
 
@@ -13,7 +13,7 @@
                 </div>
 
                 <div class="text-center">
-                    <a href="{{ route('root') }}" class="btn btn-success btn-lg">Back to Homepage</a>
+                    <a href="{{ route('root') }}" class="btn btn-success btn-lg">Return to Homepage</a>
                 </div>
 
             </div>

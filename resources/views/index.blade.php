@@ -14,7 +14,6 @@
             </div>
         </div>
 
-
         <div class="card">
 
             <h2 class="card-title"><i class="fa fa-lightbulb-o fa-fw"></i> Qualifications</h2>

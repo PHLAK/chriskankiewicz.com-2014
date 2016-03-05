@@ -9,7 +9,6 @@
 
 <body>
     @include('layouts.partials.navigation')
-    @include('layouts.partials.header')
 
     <div class="content-area">
         @yield('content')
