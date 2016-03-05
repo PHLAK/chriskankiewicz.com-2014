@@ -26,7 +26,7 @@
             </li>
 
             <li>
-                <a href="http://blog.chriskankiewicz.com">Blog</a>
+                <a href="{{ route('blog') }}">Blog</a>
             </li>
 
         </ul>
