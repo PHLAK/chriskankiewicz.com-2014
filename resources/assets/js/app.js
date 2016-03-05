@@ -24,9 +24,14 @@ $(document).ready(function() {
 });
 
 function checkNavPosition() {
-    if ($(window).scrollTop() >= $('.header-image').outerHeight()) {
+
+    var scrollPosition = $(window).scrollTop();
+    var headerBottom   = $('.header-image').outerHeight();
+
+    if (scrollPosition != 0 && scrollPosition >= headerBottom) {
         $('.primary-navigation').addClass('primary-navigation-collapse');
     } else {
         $('.primary-navigation').removeClass('primary-navigation-collapse');
     }
+
 }
