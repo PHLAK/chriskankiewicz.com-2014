@@ -40,7 +40,7 @@ class Post extends Model
      * @return hasOne Article category
      */
     public function category() {
-        return $this->hasOne('App\Category');
+        return $this->hasOne(Category::class);
     }
 
     /**
@@ -49,7 +49,7 @@ class Post extends Model
      * @return belongsToMany Article tags
      */
     public function tags() {
-        return $this->belongsToMany('App\Tag');
+        return $this->belongsToMany(Tag::class);
     }
 
 }

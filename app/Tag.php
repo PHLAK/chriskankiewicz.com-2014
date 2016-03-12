@@ -22,7 +22,7 @@ class Tag extends Model
      * @return belongsToMany Tag posts
      */
     public function posts() {
-        return $this->belongsToMany('App\Post')->withTimestamps();
+        return $this->belongsToMany(Post::class)->withTimestamps();
     }
 
 }

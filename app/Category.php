@@ -22,7 +22,7 @@ class Category extends Model
      * @return belongsTo Category posts
      */
     public function posts() {
-        return $this->belongsToMany('App\Post');
+        return $this->belongsToMany(Post::class);
     }
 
 }
