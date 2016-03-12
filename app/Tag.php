@@ -16,8 +16,13 @@ class Tag extends Model
         'name'
     ];
 
+    /**
+     * Get  tag's posts
+     *
+     * @return belongsToMany Tag posts
+     */
     public function posts() {
-        $this->hasMany('App\Post');
+        return $this->belongsToMany('App\Post')->withTimestamps();
     }
 
 }

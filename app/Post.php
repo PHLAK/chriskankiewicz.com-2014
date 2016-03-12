@@ -16,16 +16,40 @@ class Post extends Model
         'title', 'body', 'slug', 'date', 'category_id' // Tags?
     ];
 
-    public function users() {
-        $this->hasOne('App\User');
+    /**
+     * Get an article's user
+     *
+     * @return belongsTo Article user
+     */
+    public function user() {
+        return $this->belongsTo('App\User');
     }
 
-    public function categories() {
-        $this->hasOne('App\Category');
+    /**
+     * Alias for user method
+     *
+     * @return belongsTo Article author (user)
+     */
+    public function author() {
+        return $this->user();
     }
 
+    /**
+     * Get an article's category
+     *
+     * @return hasOne Article category
+     */
+    public function category() {
+        return $this->hasOne('App\Category');
+    }
+
+    /**
+     * Get an article's tags
+     *
+     * @return belongsToMany Article tags
+     */
     public function tags() {
-        $this->hasMany('App\Tag');
+        return $this->belongsToMany('App\Tag');
     }
 
 }
