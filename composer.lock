@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "b4c9b90cd28e1fcd76329d0a2659ea82",
-    "content-hash": "cf0b660af086ee4c6a9777c90bae745f",
+    "hash": "715bf099ec766e1f86503fbda68d9ff9",
+    "content-hash": "92d94e466a09e84b5235ca3b830e76a4",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -1823,6 +1823,48 @@
         }
     ],
     "packages-dev": [
+        {
+            "name": "components/highlightjs",
+            "version": "9.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/components/highlightjs.git",
+                "reference": "08d860a08b885d78975076cf3f9fb165ed9ff253"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/components/highlightjs/zipball/08d860a08b885d78975076cf3f9fb165ed9ff253",
+                "reference": "08d860a08b885d78975076cf3f9fb165ed9ff253",
+                "shasum": ""
+            },
+            "type": "component",
+            "extra": {
+                "component": {
+                    "scripts": [
+                        "highlight.pack.min.js"
+                    ],
+                    "files": [
+                        "styles/*"
+                    ],
+                    "shim": {
+                        "exports": "hljs"
+                    }
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Ivan Sagalaev",
+                    "email": "maniac@softwaremaniacs.org",
+                    "homepage": "http://softwaremaniacs.org"
+                }
+            ],
+            "description": "Highlight.js highlights syntax in code examples on blogs, forums and in fact on any web pages.",
+            "time": "2016-03-05 17:39:56"
+        },
         {
             "name": "components/jquery",
             "version": "2.2.1",

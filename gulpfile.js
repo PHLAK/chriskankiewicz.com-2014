@@ -18,6 +18,7 @@ elixir(function(mix) {
     mix.scripts([
         'vendor/components/jquery/jquery.js',
         'vendor/twbs/bootstrap-sass/assets/javascripts/bootstrap.js',
+        'vendor/components/highlightjs/highlight.pack.js',
         'resources/assets/js/app.js'
     ], 'public/js/all.js', '.');
 
