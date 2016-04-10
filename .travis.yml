@@ -1,7 +1,15 @@
-language: php
 sudo: false
-install: php composer.phar install
+
+language: php
 php:
     - 5.5
     - 5.6
     - 7.0
+
+cache:
+    directories:
+        - $HOME/.composer/cache
+
+before_install: phpenv config-rm xdebug.ini
+
+install: composer install
