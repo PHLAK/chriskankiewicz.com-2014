@@ -26,6 +26,10 @@ Route::get('/', ['as' => 'root', function () {
 |
 */
 
+Route::group(['prefix' => 'auth', 'middleware' => 'web'], function () {
+    Route::auth();
+});
+
 Route::group(['prefix' => 'blog', 'middleware' => ['web']], function () {
 
     Route::get('/', ['as' => 'blog', 'uses' => 'BlogController@index']);
