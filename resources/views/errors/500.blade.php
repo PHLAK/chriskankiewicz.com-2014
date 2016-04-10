@@ -1,4 +1,4 @@
-@extends('errors.layout')
+@extends('layouts.no-header')
 
 @section('content')
 
