@@ -3,19 +3,6 @@ $(document).ready(function() {
     // Enable Tooltips
     $('[rel="tooltip"]').tooltip();
 
-    // Check nav position on page load
-    checkNavPosition();
-
-    // Check nav position on scroll
-    $(window).scroll(function() {
-        checkNavPosition();
-    });
-
-    // Check nav position on resize
-    $(window).resize(function() {
-        checkNavPosition();
-    });
-
     // Toggle navbar state on button click
     $('.navbar-toggle').click(function() {
         $('.nav-links').toggleClass('expanded');
@@ -23,7 +10,7 @@ $(document).ready(function() {
 
 });
 
-function checkNavPosition() {
+$(document).on('ready scroll resize', $(window), function() {
 
     var scrollPosition = $(window).scrollTop();
     var headerBottom   = $('.header-image').outerHeight();
@@ -34,4 +21,4 @@ function checkNavPosition() {
         $('.primary-navigation').removeClass('primary-navigation-collapse');
     }
 
-}
+});
