@@ -9,7 +9,6 @@
 
         <div class="card-body">
 
-            {{-- Form::open(['action' => url('/auth/login')]) --}}
             {!! Form::open() !!}
 
                 <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
