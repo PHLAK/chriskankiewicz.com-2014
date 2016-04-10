@@ -3,7 +3,8 @@
     border-radius: 2px;
     background-color: #FFF;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    margin: 50px 0;
+    margin-bottom: 50px;
+    margin-top: 50px;
     position: relative;
 
     &.intro-card {
@@ -16,10 +17,6 @@
 
     &.map-card {
         overflow: hidden;
-    }
-
-    &.error-card {
-        margin-top: 100px;
     }
 
     &.blog-post-card {

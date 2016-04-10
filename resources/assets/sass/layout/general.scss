@@ -4,6 +4,10 @@ body {
     font-weight: 300;
 }
 
+body.no-header {
+    padding-top: 70px;
+}
+
 .text-justify {
     text-align: justify;
 }
