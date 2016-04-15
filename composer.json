@@ -26,7 +26,7 @@
         "laravel/homestead": "^3.0",
         "components/jquery": "^2.2",
         "twbs/bootstrap-sass": "^3.3",
-        "fortawesome/font-awesome": "^4.5",
+        "fortawesome/font-awesome": "^4.6",
         "components/highlightjs": "^9.2"
     },
     "autoload": {
