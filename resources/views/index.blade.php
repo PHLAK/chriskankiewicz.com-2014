@@ -29,10 +29,11 @@
                             <li class="label label-danger">PHP 5+</li>
                             <li class="label label-danger">HTML</li>
                             <li class="label label-danger">CSS</li>
-                            <li class="label label-danger">SCSS</li>
+                            <li class="label label-danger">Sass / SCSS</li>
                             <li class="label label-danger">JavaScript</li>
                             <li class="label label-danger">jQuery</li>
                             <li class="label label-danger">MySQL</li>
+                            <li class="label label-danger">Postgres</li>
                             <li class="label label-primary">Nginx</li>
                             <li class="label label-primary">Apache</li>
                             <li class="label label-primary">Composer</li>
@@ -47,6 +48,7 @@
                             <li class="label label-success">Linux operating systems</li>
                             <li class="label label-success">Windows operating systems</li>
                             <li class="label label-success">OpenStack</li>
+                            <li class="label label-success">Heroku</li>
                             <li class="label label-success">Amazon Web Services (AWS)</li>
                             <li class="label label-warning">Docker</li>
                             <li class="label label-warning">Vagrant</li>
