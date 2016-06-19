@@ -4,7 +4,7 @@
         <a href="{{ route('root') }}" class="site-title clearfix">
 
             <span class="title-img">
-                <img src="{{ Gravatar::get('Chris@ChrisKankiewicz.com', ['size' => 120, 'secure' => true]) }}" class="img-circle img-responsive">
+                <img src="{{ Gravatar::get('Chris@ChrisKankiewicz.com', ['size' => 200, 'secure' => true]) }}" class="img-circle img-responsive">
             </span>
 
             <span class="title-text">
