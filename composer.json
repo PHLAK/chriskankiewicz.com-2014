@@ -15,7 +15,8 @@
         "php": ">=5.5.9",
         "laravel/framework": "5.2.*",
         "creativeorange/gravatar": "~1.0",
-        "laravelcollective/html": "^5.2"
+        "laravelcollective/html": "^5.2",
+        "erusev/parsedown": "^1.6"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
