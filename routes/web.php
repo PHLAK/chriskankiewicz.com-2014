@@ -11,19 +11,14 @@
 |
 */
 
-Route::get('/', ['as' => 'root', function () {
+Auth::routes();
+
+Route::get('/', ['as' => 'root', function() {
     return view('index');
 }]);
 
-Route::group(['prefix' => 'auth', 'middleware' => 'web'], function () {
-    // Route::auth();
-    Auth::routes();
-});
-
-Route::group(['prefix' => 'blog', 'middleware' => ['web']], function () {
-
+Route::group(['prefix' => 'blog'], function() {
     Route::get('/', ['as' => 'blog', 'uses' => 'BlogController@posts']);
-
     Route::get('{slug}', ['as' => 'post', 'uses' => 'BlogController@post']);
 
     // Route::get('categories', ['as' => 'categories', 'uses' => 'BlogController@categories']);
@@ -31,14 +26,11 @@ Route::group(['prefix' => 'blog', 'middleware' => ['web']], function () {
 
     // Route::get('tags', ['as' => 'tags', 'uses' => 'BlogController@tags']);
     // Route::get('tag/{tag}', ['as' => 'tag', 'uses' => 'BlogController@tag']);
-
 });
 
-// Route::group(['prefix' => 'admin', 'middleware' => ['web']], function () {
-
+// Route::group(['prefix' => 'admin'], function () {
 //     Route::get('/', ['as' => 'admin', 'uses' => 'AdminController@index']);
 
 //     Route::get('post/create', ['as' => 'post-create', 'uses' => 'PostController@create']);
 //     Route::get('post/edit', ['as' => 'post-edit', 'uses' => 'PostController@update']);
-
 // });

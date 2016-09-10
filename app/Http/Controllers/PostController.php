@@ -9,11 +9,13 @@ use App\Http\Requests;
 class PostController extends Controller
 {
 
-    public function create() {
+    public function create()
+    {
         // ...
     }
 
-    public function update() {
+    public function update()
+    {
         // ...
     }
 

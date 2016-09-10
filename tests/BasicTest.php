@@ -2,7 +2,6 @@
 
 class BasicTest extends TestCase
 {
-
     /**
      * A basic functional test example.
      *
@@ -12,5 +11,4 @@ class BasicTest extends TestCase
     {
         $this->visit('/')->see('Chris Kankiewicz');
     }
-
 }
