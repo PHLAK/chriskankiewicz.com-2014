@@ -2,12 +2,12 @@
 
 /*
 |--------------------------------------------------------------------------
-| Routes File
+| Web Routes
 |--------------------------------------------------------------------------
 |
-| Here is where you will register all of the routes in an application.
-| It's a breeze. Simply tell Laravel the URIs it should respond to
-| and give it the controller to call when that URI is requested.
+| This file is where you may define all of the routes that are handled
+| by your application. Just tell Laravel the URIs it should respond
+| to using a Closure or controller method. Build something great!
 |
 */
 
@@ -15,24 +15,14 @@ Route::get('/', ['as' => 'root', function () {
     return view('index');
 }]);
 
-/*
-|--------------------------------------------------------------------------
-| Application Routes
-|--------------------------------------------------------------------------
-|
-| This route group applies the "web" middleware group to every route
-| it contains. The "web" middleware group is defined in your HTTP
-| kernel and includes session state, CSRF protection, and more.
-|
-*/
-
 Route::group(['prefix' => 'auth', 'middleware' => 'web'], function () {
-    Route::auth();
+    // Route::auth();
+    Auth::routes();
 });
 
 Route::group(['prefix' => 'blog', 'middleware' => ['web']], function () {
 
-    Route::get('/', ['as' => 'blog', 'uses' => 'BlogController@index']);
+    Route::get('/', ['as' => 'blog', 'uses' => 'BlogController@posts']);
 
     Route::get('{slug}', ['as' => 'post', 'uses' => 'BlogController@post']);
 
